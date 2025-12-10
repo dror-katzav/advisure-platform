@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from backend.models.calculator import CalculatorInput, CalculatorResponse, YearResult
+from models.calculator import CalculatorInput, CalculatorResponse, YearResult
 
 router = APIRouter()
 

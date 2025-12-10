@@ -20,5 +20,5 @@ async def root():
 async def health_check():
     return {"status": "ok"}
 
-from backend.api import calculator
+from api import calculator
 app.include_router(calculator.router, prefix="/api/v1", tags=["calculator"])
