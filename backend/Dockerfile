@@ -1,8 +1,16 @@
 # Use an official Python runtime as a parent image
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # Set the working directory in the container
 WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libxml2-dev \
+    libxslt-dev \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
 # Copy the file from your host to your current location.
 COPY requirements.txt .
