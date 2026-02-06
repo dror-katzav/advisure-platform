@@ -24,23 +24,23 @@
 :root {
   --background: #F5F7F8;
   --foreground: #1F2933;
-  --advisure-green: #046A38;
+  --advisure-blue: #00334A;
   --advisure-silver: #C7CCD1;
-  --advisure-gold: #C9A24D;
+  --advisure-gold: #C9AE62;
   --charcoal: #1F2933;
   --off-white: #F5F7F8;
-  --soft-green: #E3EFE9;
+  --soft-blue: #E6F0F4;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-advisure-green: var(--advisure-green);
+  --color-advisure-blue: var(--advisure-blue);
   --color-advisure-silver: var(--advisure-silver);
   --color-advisure-gold: var(--advisure-gold);
   --color-charcoal: var(--charcoal);
   --color-off-white: var(--off-white);
-  --color-soft-green: var(--soft-green);
+  --color-soft-blue: var(--soft-blue);
 
   --font-sans: "Inter", var(--font-geist-sans);
 }

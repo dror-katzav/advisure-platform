@@ -7,8 +7,8 @@ export function Footer() {
                         (c) 2026 Advisure.AI all Rights Reserved
                     </div>
                     <div className="flex gap-8">
-                        <a href="/about" className="text-charcoal/60 hover:text-advisure-green text-sm transition-colors">About</a>
-                        <a href="/contact" className="text-charcoal/60 hover:text-advisure-green text-sm transition-colors">Contact</a>
+                        <a href="/about" className="text-charcoal/60 hover:text-advisure-blue text-sm transition-colors">About</a>
+                        <a href="/contact" className="text-charcoal/60 hover:text-advisure-blue text-sm transition-colors">Contact</a>
                     </div>
                 </div>
             </div>

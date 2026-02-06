@@ -1,7 +1,7 @@
 export default function Platform() {
     return (
         <div className="bg-off-white">
-            <div className="bg-advisure-green py-20 px-4 sm:px-6 lg:px-8">
+            <div className="bg-advisure-blue py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">The Advisure Platform</h1>
                     <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">
@@ -31,7 +31,7 @@ export default function Platform() {
 
                 <div className="mt-24 text-center">
                     <h2 className="text-3xl font-bold text-charcoal mb-8">Ready to modernize your insurance stack?</h2>
-                    <a href="/schedule-demo" className="inline-flex items-center justify-center px-10 py-5 bg-advisure-green text-white text-xl font-bold rounded-full hover:bg-advisure-green/90 transition-all shadow-lg hover:shadow-xl">
+                    <a href="/schedule-demo" className="inline-flex items-center justify-center px-10 py-5 bg-advisure-blue text-white text-xl font-bold rounded-full hover:bg-advisure-blue/90 transition-all shadow-lg hover:shadow-xl">
                         Explore the Platform
                     </a>
                 </div>

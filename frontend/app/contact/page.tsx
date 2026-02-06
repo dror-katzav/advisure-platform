@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         <div className="bg-off-white min-h-screen">
-            <div className="bg-advisure-green py-20 px-4 sm:px-6 lg:px-8">
+            <div className="bg-advisure-blue py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">Contact Us</h1>
                     <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto font-medium">
@@ -59,18 +59,18 @@ export default function Contact() {
                     <form action="https://formspree.io/f/mojwbebe" method="POST" className="grid grid-cols-1 gap-6">
                         <div>
                             <label htmlFor="name" className="block text-sm font-bold text-charcoal mb-2">Full Name</label>
-                            <input type="text" name="name" id="name" required className="w-full rounded-xl border-advisure-silver/30 shadow-sm focus:border-advisure-green focus:ring-advisure-green px-4 py-3 outline-none border transition-all" />
+                            <input type="text" name="name" id="name" required className="w-full rounded-xl border-advisure-silver/30 shadow-sm focus:border-advisure-blue focus:ring-advisure-blue px-4 py-3 outline-none border transition-all" />
                         </div>
                         <div>
                             <label htmlFor="email" className="block text-sm font-bold text-charcoal mb-2">Email Address</label>
-                            <input type="email" name="email" id="email" required className="w-full rounded-xl border-advisure-silver/30 shadow-sm focus:border-advisure-green focus:ring-advisure-green px-4 py-3 outline-none border transition-all" />
+                            <input type="email" name="email" id="email" required className="w-full rounded-xl border-advisure-silver/30 shadow-sm focus:border-advisure-blue focus:ring-advisure-blue px-4 py-3 outline-none border transition-all" />
                         </div>
                         <div>
                             <label htmlFor="message" className="block text-sm font-bold text-charcoal mb-2">Your Message</label>
-                            <textarea name="message" id="message" rows={4} required className="w-full rounded-xl border-advisure-silver/30 shadow-sm focus:border-advisure-green focus:ring-advisure-green px-4 py-3 outline-none border transition-all"></textarea>
+                            <textarea name="message" id="message" rows={4} required className="w-full rounded-xl border-advisure-silver/30 shadow-sm focus:border-advisure-blue focus:ring-advisure-blue px-4 py-3 outline-none border transition-all"></textarea>
                         </div>
                         <div>
-                            <button type="submit" className="w-full py-4 px-6 bg-advisure-green text-white font-bold rounded-xl hover:bg-advisure-green/90 transition-all shadow-lg hover:shadow-xl">
+                            <button type="submit" className="w-full py-4 px-6 bg-advisure-blue text-white font-bold rounded-xl hover:bg-advisure-blue/90 transition-all shadow-lg hover:shadow-xl">
                                 Send Message
                             </button>
                         </div>

@@ -69,7 +69,7 @@ export default function CalculatorPage() {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h1 className="text-4xl font-bold text-charcoal sm:text-5xl">
-                        RIA Experience: <span className="text-advisure-green">PPLI Impact</span>
+                        RIA Experience: <span className="text-advisure-blue">PPLI Impact</span>
                     </h1>
                     <p className="mt-6 text-xl text-charcoal/60 max-w-2xl mx-auto">
                         Quantify the tax alpha of a Private Placement Life Insurance strategy for your high-net-worth clients.
@@ -87,7 +87,7 @@ export default function CalculatorPage() {
 
                                 <div>
                                     <label className="block text-sm font-bold text-charcoal mb-2">
-                                        Initial Investment: <span className="text-advisure-green font-bold text-lg ml-2">${formData.initial_investment.toLocaleString()}</span>
+                                        Initial Investment: <span className="text-advisure-blue font-bold text-lg ml-2">${formData.initial_investment.toLocaleString()}</span>
                                     </label>
                                     <input
                                         type="range"
@@ -96,7 +96,7 @@ export default function CalculatorPage() {
                                         step="500000"
                                         value={formData.initial_investment}
                                         onChange={handleSliderChange}
-                                        className="w-full h-2 bg-soft-green rounded-lg appearance-none cursor-pointer accent-advisure-green mt-4"
+                                        className="w-full h-2 bg-soft-blue rounded-lg appearance-none cursor-pointer accent-advisure-blue mt-4"
                                     />
                                     <div className="flex justify-between text-xs text-charcoal/40 mt-2 font-medium">
                                         <span>$1M</span>
@@ -120,7 +120,7 @@ export default function CalculatorPage() {
                                         name="years"
                                         value={formData.years}
                                         onChange={handleChange}
-                                        className="block w-full rounded-xl border border-advisure-silver/30 bg-white px-4 py-3 text-sm text-charcoal focus:ring-2 focus:ring-advisure-green focus:border-transparent outline-none transition-all"
+                                        className="block w-full rounded-xl border border-advisure-silver/30 bg-white px-4 py-3 text-sm text-charcoal focus:ring-2 focus:ring-advisure-blue focus:border-transparent outline-none transition-all"
                                     >
                                         <option value="1">1 Year</option>
                                         <option value="5">5 Years</option>
@@ -187,7 +187,7 @@ export default function CalculatorPage() {
                                             ${results.final_traditional_value.toLocaleString()}
                                         </p>
                                     </div>
-                                    <div className="bg-advisure-green p-8 rounded-3xl shadow-xl border border-advisure-green/20 relative overflow-hidden group">
+                                    <div className="bg-advisure-blue p-8 rounded-3xl shadow-xl border border-advisure-blue/20 relative overflow-hidden group">
                                         <p className="text-sm font-bold text-white/60 uppercase tracking-widest relative z-10">PPLI Strategy</p>
                                         <p className="mt-3 text-3xl font-bold text-white relative z-10">
                                             ${results.final_ppli_value.toLocaleString()}
@@ -209,10 +209,10 @@ export default function CalculatorPage() {
                             </>
                         )}
 
-                        <div className="bg-soft-green p-8 rounded-3xl text-center">
-                            <h3 className="text-xl font-bold text-advisure-green mb-2">Unlock the full power of Private Placement</h3>
+                        <div className="bg-soft-blue p-8 rounded-3xl text-center">
+                            <h3 className="text-xl font-bold text-advisure-blue mb-2">Unlock the full power of Private Placement</h3>
                             <p className="text-charcoal/70 mb-8">This calculator illustrates the tax-drag reduction. Our platform handles the full implementation.</p>
-                            <a href="/schedule-demo" className="inline-flex items-center justify-center px-8 py-3 bg-advisure-green text-white font-bold rounded-full hover:bg-advisure-green/90 transition-all shadow-md">
+                            <a href="/schedule-demo" className="inline-flex items-center justify-center px-8 py-3 bg-advisure-blue text-white font-bold rounded-full hover:bg-advisure-blue/90 transition-all shadow-md">
                                 Schedule a full strategy session
                             </a>
                         </div>

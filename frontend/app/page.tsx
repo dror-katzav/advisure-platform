@@ -9,7 +9,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal leading-tight">
-              At Advisure, we believe the most powerful wealth strategies emerge when <span className="text-advisure-green">investment and insurance work together</span>—not in silos.
+              At Advisure, we believe the most powerful wealth strategies emerge when <span className="text-advisure-blue">investment and insurance work together</span>—not in silos.
             </h1>
             <p className="mt-8 text-xl text-charcoal/80 leading-relaxed font-medium">
               For too long, sophisticated, tax-advantaged solutions have been complex, opaque, and out of reach.
@@ -18,7 +18,7 @@ export default function Home() {
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/schedule-demo"
-                className="inline-flex items-center justify-center px-8 py-4 bg-advisure-green text-white text-lg font-bold rounded-full hover:bg-advisure-green/90 transition-all shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-8 py-4 bg-advisure-blue text-white text-lg font-bold rounded-full hover:bg-advisure-blue/90 transition-all shadow-lg hover:shadow-xl"
               >
                 Schedule a demo
               </Link>
@@ -27,11 +27,11 @@ export default function Home() {
         </div>
 
         {/* Subtle background element */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-advisure-green/5 -skew-x-12 transform translate-x-1/4" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-advisure-blue/5 -skew-x-12 transform translate-x-1/4" />
       </section>
 
       {/* "We exist to change that" Section */}
-      <section className="py-24 bg-advisure-green">
+      <section className="py-24 bg-advisure-blue">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white">
             We exist to change that.
@@ -65,7 +65,7 @@ export default function Home() {
               <p>
                 Our technology simplifies complexity, removes friction, and brings clarity to decision-making — so accredited investors can confidently pursue better risk-adjusted, after-tax results.
               </p>
-              <p className="text-advisure-green font-bold text-3xl pt-4">
+              <p className="text-advisure-blue font-bold text-3xl pt-4">
                 This is the future of wealth management:
               </p>
               <p className="text-charcoal/60 font-medium text-xl">

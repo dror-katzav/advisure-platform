@@ -1,7 +1,7 @@
 export default function ScheduleDemo() {
     return (
         <div className="bg-off-white min-h-screen">
-            <div className="bg-advisure-green py-20 px-4 sm:px-6 lg:px-8">
+            <div className="bg-advisure-blue py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">Schedule a Demo</h1>
                     <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">
@@ -37,7 +37,7 @@ export default function ScheduleDemo() {
                             </div>
                             <div>
                                 <p className="text-sm font-bold text-charcoal">Call us directly</p>
-                                <p className="text-advisure-green font-medium">732-850-3079</p>
+                                <p className="text-advisure-blue font-medium">732-850-3079</p>
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
@@ -48,7 +48,7 @@ export default function ScheduleDemo() {
                             </div>
                             <div>
                                 <p className="text-sm font-bold text-charcoal">Email us</p>
-                                <p className="text-advisure-green font-medium">info@advisure.ai</p>
+                                <p className="text-advisure-blue font-medium">info@advisure.ai</p>
                             </div>
                         </div>
                     </div>

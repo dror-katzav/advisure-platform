@@ -1,7 +1,7 @@
 export default function Partners() {
     return (
         <div className="bg-off-white">
-            <div className="bg-advisure-green py-20 px-4 sm:px-6 lg:px-8">
+            <div className="bg-advisure-blue py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">Our Partners</h1>
                     <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">

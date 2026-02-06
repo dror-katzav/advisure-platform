@@ -19,7 +19,7 @@
       }
 
       .cls-11 {
-        fill: #c9a24d;
+        fill: #C9AE62;
       }
 
       .cls-4 {
@@ -35,7 +35,7 @@
       }
 
       .cls-12 {
-        fill: #046a38;
+        fill: #00334A;
       }
 
       .cls-7 {
@@ -71,19 +71,19 @@
       <stop offset=".7" stop-color="#000" stop-opacity=".5"/>
     </linearGradient>
     <linearGradient id="linear-gradient-5" x1="347.5" y1="436.15" x2="518.3" y2="670.63" gradientUnits="userSpaceOnUse">
-      <stop offset=".6" stop-color="#c9a24d"/>
+      <stop offset=".6" stop-color="#C9AE62"/>
       <stop offset=".71" stop-color="#000"/>
     </linearGradient>
     <linearGradient id="linear-gradient-6" x1="368.68" y1="486.54" x2="556.67" y2="751.43" gradientUnits="userSpaceOnUse">
       <stop offset=".28" stop-color="#000"/>
-      <stop offset=".41" stop-color="#c9a24d"/>
+      <stop offset=".41" stop-color="#C9AE62"/>
     </linearGradient>
     <linearGradient id="linear-gradient-7" x1="288.27" y1="514.19" x2="421.93" y2="562.82" gradientUnits="userSpaceOnUse">
       <stop offset=".31" stop-color="#000"/>
-      <stop offset=".55" stop-color="#046a38"/>
+      <stop offset=".55" stop-color="#00334A"/>
     </linearGradient>
     <linearGradient id="linear-gradient-8" x1="331.68" y1="495.75" x2="455.81" y2="544.24" gradientUnits="userSpaceOnUse">
-      <stop offset=".37" stop-color="#046a38"/>
+      <stop offset=".37" stop-color="#00334A"/>
       <stop offset=".68" stop-color="#000"/>
     </linearGradient>
   </defs>

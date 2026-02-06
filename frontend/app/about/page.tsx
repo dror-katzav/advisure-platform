@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className="bg-off-white">
             {/* Hero */}
-            <div className="bg-advisure-green py-20 px-4 sm:px-6 lg:px-8">
+            <div className="bg-advisure-blue py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">About Advisure</h1>
                     <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">
@@ -17,7 +17,7 @@ export default function About() {
             <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8 space-y-24">
                 {/* Vision Section */}
                 <div className="bg-white p-12 rounded-3xl shadow-sm border border-advisure-silver/20">
-                    <h2 className="text-advisure-green text-sm font-bold uppercase tracking-widest mb-4">Our Vision</h2>
+                    <h2 className="text-advisure-blue text-sm font-bold uppercase tracking-widest mb-4">Our Vision</h2>
                     <p className="text-2xl md:text-3xl text-charcoal font-semibold leading-snug">
                         We envision a future where insurance and investment strategies work seamlessly together to unlock smarter, more powerful outcomes.
                     </p>
@@ -31,10 +31,10 @@ export default function About() {
                     <div>
                         <h2 className="text-3xl font-bold text-charcoal mb-6">How Advisure works with RIAs</h2>
                         <p className="text-lg text-charcoal/70 leading-relaxed">
-                            We collaborate with RIAs as a <span className="text-advisure-green font-bold">behind-the-scenes structural design team</span>. You remain the primary relationship owner and investment lead. Advisure handles the complexity of private placement design, implementation, and oversight.
+                            We collaborate with RIAs as a <span className="text-advisure-blue font-bold">behind-the-scenes structural design team</span>. You remain the primary relationship owner and investment lead. Advisure handles the complexity of private placement design, implementation, and oversight.
                         </p>
-                        <div className="mt-10 p-6 bg-soft-green rounded-2xl border-l-4 border-advisure-green">
-                            <h3 className="text-xl font-bold text-advisure-green mb-2">The Result:</h3>
+                        <div className="mt-10 p-6 bg-soft-blue rounded-2xl border-l-4 border-advisure-blue">
+                            <h3 className="text-xl font-bold text-advisure-blue mb-2">The Result:</h3>
                             <p className="text-charcoal font-medium">
                                 Better client outcomes, deeper relationships, and a more differentiated practice.
                             </p>
@@ -60,8 +60,8 @@ export default function About() {
                             { step: '03', title: 'Active Oversight', desc: 'Continuous monitoring of performance, compliance, and tax efficiency.' },
                             { step: '04', title: 'Integrated Reporting', desc: 'Institutional-quality transparency for advisors and clients alike.' },
                         ].map((item, idx) => (
-                            <div key={idx} className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20 relative group hover:border-advisure-green/30 transition-all">
-                                <div className="text-5xl font-black text-advisure-green/5 absolute top-4 right-6 group-hover:text-advisure-green/10 transition-colors">{item.step}</div>
+                            <div key={idx} className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20 relative group hover:border-advisure-blue/30 transition-all">
+                                <div className="text-5xl font-black text-advisure-blue/5 absolute top-4 right-6 group-hover:text-advisure-blue/10 transition-colors">{item.step}</div>
                                 <h3 className="text-xl font-bold text-charcoal mb-4 relative z-10">{item.title}</h3>
                                 <p className="text-charcoal/70 leading-relaxed relative z-10">{item.desc}</p>
                             </div>
@@ -70,7 +70,7 @@ export default function About() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Why PPLI Section */}
-                        <div className="bg-advisure-green p-10 md:p-12 rounded-[3rem] text-white">
+                        <div className="bg-advisure-blue p-10 md:p-12 rounded-[3rem] text-white">
                             <h2 className="text-3xl font-bold mb-8">Why PPLI?</h2>
                             <ul className="space-y-6">
                                 {[
@@ -122,10 +122,10 @@ export default function About() {
                         {/* Zayda Marrie */}
                         <div className="bg-white p-8 rounded-3xl border border-advisure-silver/10 shadow-sm">
                             <div className="flex items-center gap-6 mb-6">
-                                <div className="h-20 w-20 rounded-2xl bg-advisure-green/10 flex items-center justify-center text-advisure-green text-3xl font-bold">ZM</div>
+                                <div className="h-20 w-20 rounded-2xl bg-advisure-blue/10 flex items-center justify-center text-advisure-blue text-3xl font-bold">ZM</div>
                                 <div>
                                     <h3 className="text-2xl font-bold text-charcoal">Zayda Marrie</h3>
-                                    <p className="text-advisure-green font-semibold">Former Executive, AIG & MetLife</p>
+                                    <p className="text-advisure-blue font-semibold">Former Executive, AIG & MetLife</p>
                                 </div>
                             </div>
                             <p className="text-charcoal/70 leading-relaxed">
@@ -136,17 +136,17 @@ export default function About() {
                         {/* Don Plotsky */}
                         <div className="bg-white p-8 rounded-3xl border border-advisure-silver/10 shadow-sm">
                             <div className="flex items-center gap-6 mb-6">
-                                <div className="h-20 w-20 rounded-2xl bg-advisure-green/10 flex items-center justify-center text-advisure-green text-3xl font-bold">DP</div>
+                                <div className="h-20 w-20 rounded-2xl bg-advisure-blue/10 flex items-center justify-center text-advisure-blue text-3xl font-bold">DP</div>
                                 <div>
                                     <h3 className="text-2xl font-bold text-charcoal">Don Plotsky</h3>
-                                    <p className="text-advisure-green font-semibold">Co-Founder, Uinta Investment Partners</p>
+                                    <p className="text-advisure-blue font-semibold">Co-Founder, Uinta Investment Partners</p>
                                 </div>
                             </div>
                             <p className="text-charcoal/70 leading-relaxed mb-4">
                                 Don has over 40 years of investment management experience as a leader, innovator and portfolio manager. His primary focus over his career has been on fixed-income and structured products.
                             </p>
                             <details className="text-sm text-charcoal/60 cursor-pointer">
-                                <summary className="hover:text-advisure-green transition-colors">View full bio</summary>
+                                <summary className="hover:text-advisure-blue transition-colors">View full bio</summary>
                                 <div className="mt-4 space-y-2">
                                     <p>Prior to forming Uinta, he served as head of product development and product management at Western Asset Management (2002-2016) and head of the firm’s retail business. He also served on the Management, Strategy and Risk committees.</p>
                                     <p>Don was a senior executive at CDC Investment Management Corp. (1997-2002) and portfolio manager at Advisers Capital Management (1993-1997), Equitable Capital Management (1988-1993) and Hutton Risk Management (1984-1988). Don earned an MBA in finance and economics from New York University’s Stern School of Business (1988).</p>
@@ -157,10 +157,10 @@ export default function About() {
                         {/* Corey Rickman */}
                         <div className="bg-white p-8 rounded-3xl border border-advisure-silver/10 shadow-sm">
                             <div className="flex items-center gap-6 mb-6">
-                                <div className="h-20 w-20 rounded-2xl bg-advisure-green/10 flex items-center justify-center text-advisure-green text-3xl font-bold">CR</div>
+                                <div className="h-20 w-20 rounded-2xl bg-advisure-blue/10 flex items-center justify-center text-advisure-blue text-3xl font-bold">CR</div>
                                 <div>
                                     <h3 className="text-2xl font-bold text-charcoal">Corey Rickman</h3>
-                                    <p className="text-advisure-green font-semibold">Portfolio Analyst, Uinta Investment Partners</p>
+                                    <p className="text-advisure-blue font-semibold">Portfolio Analyst, Uinta Investment Partners</p>
                                 </div>
                             </div>
                             <p className="text-charcoal/70 leading-relaxed">
@@ -171,17 +171,17 @@ export default function About() {
                         {/* Dror Katzav */}
                         <div className="bg-white p-8 rounded-3xl border border-advisure-silver/10 shadow-sm">
                             <div className="flex items-center gap-6 mb-6">
-                                <div className="h-20 w-20 rounded-2xl bg-advisure-green/10 flex items-center justify-center text-advisure-green text-3xl font-bold">DK</div>
+                                <div className="h-20 w-20 rounded-2xl bg-advisure-blue/10 flex items-center justify-center text-advisure-blue text-3xl font-bold">DK</div>
                                 <div>
                                     <h3 className="text-2xl font-bold text-charcoal">Dror Katzav</h3>
-                                    <p className="text-advisure-green font-semibold">Founder & CEO, Atidot</p>
+                                    <p className="text-advisure-blue font-semibold">Founder & CEO, Atidot</p>
                                 </div>
                             </div>
                             <p className="text-charcoal/70 leading-relaxed mb-4">
                                 Dror is the Founder and CEO of Atidot, an AI-driven, cloud-based platform for life insurers. Before co-founding Atidot, he spent 11 years as an officer and technology leader in elite units of the IDF Intelligence Corps.
                             </p>
                             <details className="text-sm text-charcoal/60 cursor-pointer">
-                                <summary className="hover:text-advisure-green transition-colors">View full bio</summary>
+                                <summary className="hover:text-advisure-blue transition-colors">View full bio</summary>
                                 <div className="mt-4 space-y-2">
                                     <p>An experienced data scientist, Dror has consulted for leading technology startups on advanced machine learning models. He holds a B.Sc. in Physics and Mathematics from the Hebrew University and an M.Sc. in Management Sciences from Tel Aviv University.</p>
                                     <p>Dror is a frequent speaker at global insurtech conferences and is recognized as a visionary on applying AI to life insurance. He lives in the San Francisco Bay Area.</p>

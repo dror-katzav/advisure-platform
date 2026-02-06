@@ -20,28 +20,28 @@ export function Navbar() {
                     </div>
 
                     <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-8">
-                        <Link href="/" className="text-charcoal hover:text-advisure-green px-1 pt-1 text-sm font-medium transition-colors">
+                        <Link href="/" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
                             Home
                         </Link>
-                        <Link href="/ria-experience" className="text-charcoal hover:text-advisure-green px-1 pt-1 text-sm font-medium transition-colors">
+                        <Link href="/ria-experience" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
                             RIA experience
                         </Link>
-                        <Link href="/partners" className="text-charcoal hover:text-advisure-green px-1 pt-1 text-sm font-medium transition-colors">
+                        <Link href="/partners" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
                             Partners
                         </Link>
-                        <Link href="/about" className="text-charcoal hover:text-advisure-green px-1 pt-1 text-sm font-medium transition-colors">
+                        <Link href="/about" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
                             About
                         </Link>
-                        <Link href="/contact" className="text-charcoal hover:text-advisure-green px-1 pt-1 text-sm font-medium transition-colors">
+                        <Link href="/contact" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
                             Contact Us
                         </Link>
                     </div>
 
                     <div className="flex items-center space-x-4">
-                        <Link href="/login" className="text-charcoal hover:text-advisure-green text-sm font-medium transition-colors">
+                        <Link href="/login" className="text-charcoal hover:text-advisure-blue text-sm font-medium transition-colors">
                             Login
                         </Link>
-                        <Link href="/schedule-demo" className="bg-advisure-green text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-advisure-green/90 transition-all shadow-sm hover:shadow-md">
+                        <Link href="/schedule-demo" className="bg-advisure-blue text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-advisure-blue/90 transition-all shadow-sm hover:shadow-md">
                             Schedule a demo
                         </Link>
                     </div>
