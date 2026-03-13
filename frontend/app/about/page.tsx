@@ -14,16 +14,57 @@ export default function About() {
             </div>
 
             {/* Vision / How it works */}
-            <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8 space-y-24">
-                {/* Vision Section */}
-                <div className="bg-white p-12 rounded-3xl shadow-sm border border-advisure-silver/20">
-                    <h2 className="text-advisure-blue text-sm font-bold uppercase tracking-widest mb-4">Our Vision</h2>
-                    <p className="text-2xl md:text-3xl text-charcoal font-semibold leading-snug">
-                        We envision a future where insurance and investment strategies work seamlessly together within the asset allocation process to unlock smarter, more powerful and better outcomes.
-                    </p>
-                    <p className="mt-8 text-lg text-charcoal/70 leading-relaxed">
-                        A future where institutional-quality, tax-advantaged solutions are directly accessible through the RIA and no longer burdened by friction, opacity, or legacy constraints. By reducing complexity and elevating the advisor experience, we aim to empower the RIA to improve outcomes for their accredited and qualified investors with a new level of clarity, confidence, and ability to achieve superior risk-adjusted returns and after-tax results.
-                    </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    {/* Mission Section */}
+                    <div className="bg-white p-12 rounded-3xl shadow-sm border border-advisure-silver/20">
+                        <h2 className="text-advisure-blue text-sm font-bold uppercase tracking-widest mb-4">Our Mission</h2>
+                        <p className="text-2xl md:text-3xl text-charcoal font-semibold leading-snug">
+                            We unify investment advisory and insurance into a single, integrated wealth infrastructure.
+                        </p>
+                        <p className="mt-8 text-lg text-charcoal/70 leading-relaxed">
+                            We empower advisors to deliver institutional-quality investment strategies to accredited and qualified investors through technology that simplifies education, enhances decision-making, and streamlines implementation. By reducing complexity and friction, we seek to improve risk-adjusted and after-tax outcomes.
+                        </p>
+                    </div>
+
+                    {/* Vision Section */}
+                    <div className="bg-white p-12 rounded-3xl shadow-sm border border-advisure-silver/20">
+                        <h2 className="text-advisure-blue text-sm font-bold uppercase tracking-widest mb-4">Our Vision</h2>
+                        <p className="text-2xl md:text-3xl text-charcoal font-semibold leading-snug">
+                            To become the trusted infrastructure through which advisors deliver the most sophisticated, tax-efficient wealth solutions in the industry.
+                        </p>
+                        <p className="mt-8 text-lg text-charcoal/70 leading-relaxed">
+                            We believe the future of wealth management is integrated, transparent, and advisor-led — where structure and strategy work together to produce superior long-term outcomes.
+                        </p>
+                    </div>
+
+                {/* Our Philosophy Section */}
+                <div className="bg-advisure-blue p-12 md:p-16 rounded-[3rem] text-white">
+                    <div className="text-center max-w-3xl mx-auto mb-12">
+                        <h2 className="text-advisure-gold text-sm font-bold uppercase tracking-widest mb-4">Our Philosophy</h2>
+                        <p className="text-3xl md:text-4xl font-bold">We believe structure rivals strategy.</p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div>
+                            <div className="text-advisure-gold font-bold text-xl mb-3">01</div>
+                            <h3 className="text-xl font-bold mb-3">Structure is Strategy</h3>
+                            <p className="text-white/70">Optimizing the structural wrapper is as critical as the underlying investment choice.</p>
+                        </div>
+                        <div>
+                            <div className="text-advisure-gold font-bold text-xl mb-3">02</div>
+                            <h3 className="text-xl font-bold mb-3">Tools Drive Decisions</h3>
+                            <p className="text-white/70">Better decisions and clearer conversations come from better analytical tools.</p>
+                        </div>
+                        <div>
+                            <div className="text-advisure-gold font-bold text-xl mb-3">03</div>
+                            <h3 className="text-xl font-bold mb-3">Long-Term Focus</h3>
+                            <p className="text-white/70">Long-term compounding outcomes always beat short-term tax optimization.</p>
+                        </div>
+                        <div>
+                            <div className="text-advisure-gold font-bold text-xl mb-3">04</div>
+                            <h3 className="text-xl font-bold mb-3">Evaluated, Not Sold</h3>
+                            <p className="text-white/70">Private placement should be objectively evaluated as a structure, not sold as a product.</p>
+                        </div>
+                    </div>
                 </div>
 
                 {/* How Advisure works with RIAs */}

@@ -93,13 +93,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* "We exist to change that" Section */}
-      <section className="py-32 bg-off-white relative z-0">
+      {/* "The Result" Section */}
+      <section className="py-24 bg-advisure-blue">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-bold text-advisure-gold tracking-widest uppercase mb-4">The Challenge</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-charcoal tracking-tight">
-            We exist to change that.
-          </h2>
+          <p className="text-sm font-bold text-advisure-gold tracking-widest uppercase mb-4">The Result</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 transform hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4">True integration</h3>
+              <p className="text-white/60 font-medium">NOT coordination</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 transform hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4">Structural Alpha</h3>
+              <p className="text-white/60 font-medium">NOT incremental improvement</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 transform hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4">End-to-end execution</h3>
+              <p className="text-white/60 font-medium">NOT fragmented oversight</p>
+            </div>
+          </div>
+          <div className="mt-16 flex flex-col sm:flex-row justify-center gap-6">
+            <Link
+              href="/ppli"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-advisure-blue text-lg font-bold rounded-full hover:bg-white/90 transition-all shadow-lg"
+            >
+              Learn More About Private Placement
+            </Link>
+            <Link
+              href="/platform"
+              className="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/30 text-white text-lg font-bold rounded-full hover:bg-white/10 transition-all"
+            >
+              Explore the Advisure Platform
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -113,6 +138,112 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/20 to-transparent" />
+      </section>
+
+      {/* Calculator Teaser Section */}
+      <section className="py-24 bg-off-white overflow-hidden relative mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-5xl font-bold text-charcoal mb-6 leading-tight">
+                Quantify the Tax Advantage of <span className="text-advisure-blue">PPLI</span>
+              </h2>
+              <p className="text-lg text-charcoal/70 mb-8 leading-relaxed">
+                Private Placement Life Insurance (PPLI) can materially reduce tax drag on high-income, high-turnover strategies. Estimate how tax efficiency shifts long-term performance for high-net-worth portfolios.
+              </p>
+              
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20 space-y-8">
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-semibold text-charcoal">Initial Investment</span>
+                    <span className="text-advisure-blue font-bold">$10,000,000</span>
+                  </div>
+                  <div className="h-2 bg-advisure-silver/20 rounded-full">
+                    <div className="h-full bg-advisure-blue rounded-full w-1/4"></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-semibold text-charcoal">Time Horizon</span>
+                    <span className="text-advisure-blue font-bold">20 Years</span>
+                  </div>
+                  <div className="h-2 bg-advisure-silver/20 rounded-full">
+                    <div className="h-full bg-advisure-blue rounded-full w-2/5"></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-semibold text-charcoal">Annual Rate of Return</span>
+                    <span className="text-advisure-blue font-bold">8.0%</span>
+                  </div>
+                  <div className="h-2 bg-advisure-silver/20 rounded-full">
+                    <div className="h-full bg-advisure-blue rounded-full w-1/3"></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-semibold text-charcoal">PPLI Allocation</span>
+                    <span className="text-advisure-blue font-bold">50%</span>
+                  </div>
+                  <div className="h-2 bg-advisure-silver/20 rounded-full">
+                    <div className="h-full bg-advisure-blue rounded-full w-1/2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="bg-advisure-blue rounded-[3rem] p-10 lg:p-12 text-center text-white relative z-10 shadow-2xl">
+                <h3 className="text-2xl font-bold mb-12">Projected After-Tax Wealth</h3>
+                
+                <div className="flex items-end justify-center gap-4 h-48 mb-6">
+                  {/* Traditional Bar */}
+                  <div className="flex flex-col items-center w-24">
+                    <div className="w-full bg-white/20 rounded-t-lg h-32 relative group">
+                      <div className="absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-charcoal text-white text-xs py-1 px-2 rounded">
+                        Traditional
+                      </div>
+                    </div>
+                    <span className="mt-4 font-bold text-sm">Traditional</span>
+                  </div>
+                  
+                  {/* PPLI Enhanced Bar */}
+                  <div className="flex flex-col items-center w-24">
+                    <div className="w-full bg-advisure-gold rounded-t-lg h-48 relative group shadow-[0_0_30px_rgba(201,174,98,0.4)]">
+                      <div className="absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-charcoal text-white text-xs py-1 px-2 rounded">
+                        PPLI Enhanced
+                      </div>
+                    </div>
+                    <span className="mt-4 font-bold text-sm">PPLI Enhanced</span>
+                  </div>
+                </div>
+
+                <div className="bg-white/10 border border-white/20 rounded-2xl p-6 mt-12 backdrop-blur-sm">
+                  <p className="text-sm text-white/80 uppercase tracking-wide mb-2">Estimated Tax Savings</p>
+                  <p className="text-4xl font-black text-advisure-gold">+$3,450,000</p>
+                </div>
+                
+                <p className="text-xs text-white/50 mt-8 max-w-sm mx-auto">
+                  Illustrative only. Assumptions are simplified to provide a directional estimate. Full scenario modeling and implementation analysis are available through the Advisure platform.
+                </p>
+              </div>
+
+              {/* Decorative background circle */}
+              <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/3 w-96 h-96 bg-advisure-gold/20 rounded-full blur-3xl -z-0"></div>
+            </div>
+          </div>
+
+          <div className="mt-20 text-center max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-charcoal mb-6">Ready to unlock the full power of Private Placement?</h3>
+            <p className="text-charcoal/70 mb-8">Get advanced scenario models, implementation support start to finish, and post issue monitoring with the Advisure platform.</p>
+            <Link
+              href="/schedule-demo"
+              className="inline-flex items-center justify-center px-8 py-4 bg-advisure-blue text-white text-lg font-bold rounded-full hover:bg-advisure-blue/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+            >
+              Schedule a Demo to Model the Impact
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Infrastructure Section */}

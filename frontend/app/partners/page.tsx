@@ -12,9 +12,30 @@ export default function Partners() {
 
             <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-20">
-                    <h2 className="text-3xl font-bold text-charcoal mb-6">Built on Collaboration</h2>
-                    <p className="text-lg text-charcoal/70">
-                        Advisure works with leading insurance carriers, institutional asset managers, and specialized trust companies to create robust, transparent, and high-performing private placement solutions.
+                    <h2 className="text-3xl font-bold text-charcoal mb-6">Partnering to Deliver Institutional-Grade Outcomes</h2>
+                    <p className="text-lg text-charcoal/70 mb-8">
+                        At Advisure, we don’t just list logos — we integrate partner capabilities into our platform so advisors can:
+                    </p>
+                    <ul className="text-left max-w-2xl mx-auto space-y-4">
+                        <li className="flex gap-4 items-start">
+                            <span className="text-advisure-gold mt-1">✓</span>
+                            <span className="text-charcoal/80">Access carrier support without operational friction</span>
+                        </li>
+                        <li className="flex gap-4 items-start">
+                            <span className="text-advisure-gold mt-1">✓</span>
+                            <span className="text-charcoal/80">Leverage institutional asset strategies with private insurance structures</span>
+                        </li>
+                        <li className="flex gap-4 items-start">
+                            <span className="text-advisure-gold mt-1">✓</span>
+                            <span className="text-charcoal/80">Streamline implementation and monitoring across stakeholders</span>
+                        </li>
+                        <li className="flex gap-4 items-start">
+                            <span className="text-advisure-gold mt-1">✓</span>
+                            <span className="text-charcoal/80">Provide best-in-class reporting and oversight to clients</span>
+                        </li>
+                    </ul>
+                    <p className="text-lg font-medium text-advisure-blue mt-8">
+                        These partnerships form the backbone of a transparent, scalable infrastructure for RIAs.
                     </p>
                 </div>
 

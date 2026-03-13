@@ -11,21 +11,26 @@ export default function Platform() {
             </div>
 
             <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20">
-                        <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl">01</div>
-                        <h3 className="text-xl font-bold text-charcoal mb-4">Education on PPLI &amp; PPA</h3>
-                        <p className="text-charcoal/70">Understanding the sophisticated insurance wrappers that allow you to structurally optimize portfolios.</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20 hover:border-advisure-blue/30 transition-all group">
+                        <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl group-hover:bg-advisure-gold group-hover:text-white transition-colors">01</div>
+                        <h3 className="text-xl font-bold text-charcoal mb-4">Scalable Execution</h3>
+                        <p className="text-charcoal/70 leading-relaxed">Eliminates fragmented carrier workflows by centralizing design, application, and tracking.</p>
                     </div>
-                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20">
-                        <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl">02</div>
-                        <h3 className="text-xl font-bold text-charcoal mb-4">Strategic Implementation</h3>
-                        <p className="text-charcoal/70">Coordinating carriers, specialized trust companies, and documentation through a frictionless digital workflow.</p>
+                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20 hover:border-advisure-blue/30 transition-all group">
+                        <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl group-hover:bg-advisure-gold group-hover:text-white transition-colors">02</div>
+                        <h3 className="text-xl font-bold text-charcoal mb-4">Operational Transparency</h3>
+                        <p className="text-charcoal/70 leading-relaxed">Pending Cases and dashboards provide real-time visibility into every client engagement.</p>
                     </div>
-                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20">
-                        <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl">03</div>
-                        <h3 className="text-xl font-bold text-charcoal mb-4">Ongoing Oversight</h3>
-                        <p className="text-charcoal/70">Active monitoring and reporting to ensure structures remain aligned with client needs.</p>
+                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20 hover:border-advisure-blue/30 transition-all group">
+                        <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl group-hover:bg-advisure-gold group-hover:text-white transition-colors">03</div>
+                        <h3 className="text-xl font-bold text-charcoal mb-4">Data-Driven Conversations</h3>
+                        <p className="text-charcoal/70 leading-relaxed">Illustrations and policy information empower advisors to explain structural value with data.</p>
+                    </div>
+                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20 hover:border-advisure-blue/30 transition-all group">
+                        <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl group-hover:bg-advisure-gold group-hover:text-white transition-colors">04</div>
+                        <h3 className="text-xl font-bold text-charcoal mb-4">Enhanced Client Service</h3>
+                        <p className="text-charcoal/70 leading-relaxed">Ongoing oversight tools help advisors stay proactive with clients post-implementation.</p>
                     </div>
                 </div>
 

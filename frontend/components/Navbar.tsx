@@ -26,6 +26,9 @@ export function Navbar() {
                         <Link href="/ria-experience" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
                             RIA experience
                         </Link>
+                        <Link href="/ppli" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
+                            PPLI Education
+                        </Link>
                         <Link href="/partners" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
                             Partners
                         </Link>
