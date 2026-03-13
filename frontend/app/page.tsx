@@ -13,7 +13,7 @@ export default function Home() {
             </h1>
             <div className="mt-8 text-xl text-charcoal/80 leading-relaxed font-medium space-y-4">
               <p>
-                We seek to enable RIA&apos;s to offer improved portfolio outcomes for their high-net-worth investors by enhancing:
+                We are solving the problem of market fragmentation and the challenge of not integrating and optimizing insurance structures for high-net-worth investors. We seek to enable RIAs to offer improved portfolio outcomes by enhancing:
               </p>
               <ul className="list-disc list-inside pl-4 space-y-2">
                 <li>Diversification</li>
@@ -21,7 +21,7 @@ export default function Home() {
                 <li>Risk adjusted returns</li>
               </ul>
               <p>
-                Utilizing Private Placement Insurance (PPLI) and Private Placement Annuities (PPA) as tools within the portfolio to gain access to premier alternative asset managers through an AI empowered platform that speeds implementation and reduces the complexity of adding alternatives and incorporating tax-efficient structures into the asset allocation process
+                Utilizing Private Placement Insurance (PPLI) and Private Placement Annuities (PPA) as tools within the portfolio to gain access to premier alternative asset managers through an AI empowered platform that speeds implementation and reduces the complexity of adding alternatives and incorporating tax-efficient structures into the asset allocation process.
               </p>
             </div>
 
@@ -70,7 +70,10 @@ export default function Home() {
             </h2>
             <div className="space-y-6 text-xl text-charcoal/80 leading-relaxed">
               <p>
-                By incorporating institutional quality insurance structures and strategies into the portfolio construction process, we empower RIA&apos;s to deliver better advise and superior outcomes.
+                By incorporating institutional quality insurance structures and strategies into the portfolio construction process, we empower RIAs to deliver better advice and superior outcomes.
+              </p>
+              <p className="font-semibold text-advisure-gold">
+                Same Investment Strategy. Different Structure. Leverage sophisticated insurance wrappers: PPLI and PPA.
               </p>
               <p>
                 Our AI empowered technology reduces complexity, removes friction, and brings clarity to decision-making — so accredited and qualified investors can confidently pursue better risk-adjusted returns and after-tax results.

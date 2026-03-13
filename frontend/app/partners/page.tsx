@@ -3,9 +3,9 @@ export default function Partners() {
         <div className="bg-off-white">
             <div className="bg-advisure-blue py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white">Our Partners</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white">Advisure as a Strategic Partner</h1>
                     <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">
-                        Uniting industry leaders to deliver superior after-tax results.
+                        Uniting industry leaders to deliver superior after-tax results and optimize insurance strategy.
                     </p>
                 </div>
             </div>

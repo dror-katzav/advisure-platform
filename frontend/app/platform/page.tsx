@@ -14,13 +14,13 @@ export default function Platform() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20">
                         <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl">01</div>
-                        <h3 className="text-xl font-bold text-charcoal mb-4">Sophisticated Design</h3>
-                        <p className="text-charcoal/70">Customized structural design that integrates insurance with institutional investment strategies.</p>
+                        <h3 className="text-xl font-bold text-charcoal mb-4">Education on PPLI &amp; PPA</h3>
+                        <p className="text-charcoal/70">Understanding the sophisticated insurance wrappers that allow you to structurally optimize portfolios.</p>
                     </div>
                     <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20">
                         <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl">02</div>
-                        <h3 className="text-xl font-bold text-charcoal mb-4">Streamlined Implementation</h3>
-                        <p className="text-charcoal/70">Coordinating carriers, underwriting, and documentation through a frictionless digital workflow.</p>
+                        <h3 className="text-xl font-bold text-charcoal mb-4">Strategic Implementation</h3>
+                        <p className="text-charcoal/70">Coordinating carriers, specialized trust companies, and documentation through a frictionless digital workflow.</p>
                     </div>
                     <div className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20">
                         <div className="h-12 w-12 bg-advisure-gold/10 rounded-xl flex items-center justify-center text-advisure-gold mb-6 font-bold text-xl">03</div>
