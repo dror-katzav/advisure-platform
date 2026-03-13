@@ -52,7 +52,7 @@ export default function Home() {
       {/* Hero Image Section */}
       <section className="relative h-[500px] md:h-[700px]">
         <Image
-          src="/hero-v4.png"
+          src="/hero-v5.png"
           alt="Modern Financial Advisors"
           fill
           className="object-cover"
