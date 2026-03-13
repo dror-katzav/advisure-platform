@@ -9,11 +9,21 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal leading-tight">
-              At Advisure, we believe the most powerful wealth strategies emerge when <span className="text-advisure-blue">investment and insurance work together</span>—not in silos.
+              At Advisure, we believe the most powerful wealth strategies emerge when <span className="text-advisure-blue">investment and insurance work together</span>
             </h1>
-            <p className="mt-8 text-xl text-charcoal/80 leading-relaxed font-medium">
-              For too long, sophisticated, tax-advantaged solutions have been complex, opaque, and out of reach.
-            </p>
+            <div className="mt-8 text-xl text-charcoal/80 leading-relaxed font-medium space-y-4">
+              <p>
+                We seek to enable RIA&apos;s to offer improved portfolio outcomes for their high-net-worth investors by enhancing:
+              </p>
+              <ul className="list-disc list-inside pl-4 space-y-2">
+                <li>Diversification</li>
+                <li>After-tax returns</li>
+                <li>Risk adjusted returns</li>
+              </ul>
+              <p>
+                Utilizing Private Placement Insurance (PPLI) and Private Placement Annuities (PPA) as tools within the portfolio to gain access to premier alternative asset managers through an AI empowered platform that speeds implementation and reduces the complexity of adding alternatives and incorporating tax-efficient structures into the asset allocation process
+              </p>
+            </div>
 
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <Link
@@ -56,20 +66,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
-              End to End Private Placement Infrastructure for RIAs
+              End to End Infrastructure for RIAs for Insurance, Annuities and Privately Placed Alternative Investment strategies
             </h2>
             <div className="space-y-6 text-xl text-charcoal/80 leading-relaxed">
               <p>
-                By uniting insurance expertise with institutional-quality investment strategies, we empower modern RIAs to deliver smarter advice and superior outcomes.
+                By incorporating institutional quality insurance structures and strategies into the portfolio construction process, we empower RIA&apos;s to deliver better advise and superior outcomes.
               </p>
               <p>
-                Our technology simplifies complexity, removes friction, and brings clarity to decision-making — so accredited investors can confidently pursue better risk-adjusted, after-tax results.
+                Our AI empowered technology reduces complexity, removes friction, and brings clarity to decision-making — so accredited and qualified investors can confidently pursue better risk-adjusted returns and after-tax results.
               </p>
               <p className="text-advisure-blue font-bold text-3xl pt-4">
                 This is the future of wealth management:
               </p>
               <p className="text-charcoal/60 font-medium text-xl">
-                integrated, transparent, and built for advisors who lead.
+                integrated, transparent, and built for advisors who lead. We seek to integrate the process of enhancing after-tax outcomes by providing seemless accessto PPLI and PPA and to improving diversification by incorporating privately placed alternatives through a single, AI empowered platform.
               </p>
 
               <div className="pt-12">

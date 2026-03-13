@@ -8,7 +8,7 @@ export default function About() {
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">About Advisure</h1>
                     <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">
-                        Redefining the intersection of investment and insurance for the modern RIA.
+                        Redefining the intersection of public and private / traditional and alternative investment strategies and utilizing institutional quality insurance and annuity structures for the ascending and expanding RIA.
                     </p>
                 </div>
             </div>
@@ -19,10 +19,10 @@ export default function About() {
                 <div className="bg-white p-12 rounded-3xl shadow-sm border border-advisure-silver/20">
                     <h2 className="text-advisure-blue text-sm font-bold uppercase tracking-widest mb-4">Our Vision</h2>
                     <p className="text-2xl md:text-3xl text-charcoal font-semibold leading-snug">
-                        We envision a future where insurance and investment strategies work seamlessly together to unlock smarter, more powerful outcomes.
+                        We envision a future where insurance and investment strategies work seamlessly together within the asset allocation process to unlock smarter, more powerful and better outcomes.
                     </p>
                     <p className="mt-8 text-lg text-charcoal/70 leading-relaxed">
-                        A future where institutional-quality, tax-advantaged solutions are accessible through modern RIAs and no longer limited by friction, opacity, or legacy constraints. By simplifying complexity and elevating the advisor experience, we aim to empower accredited investors with clarity, confidence, and the ability to achieve superior risk-adjusted, after-tax results.
+                        A future where institutional-quality, tax-advantaged solutions are directly accessible through the RIA and no longer burdened by friction, opacity, or legacy constraints. By reducing complexity and elevating the advisor experience, we aim to empower the RIA to improve outcomes for their accredited and qualified investors with a new level of clarity, confidence, and ability to achieve superior risk-adjusted returns and after-tax results.
                     </p>
                 </div>
 
@@ -31,7 +31,7 @@ export default function About() {
                     <div>
                         <h2 className="text-3xl font-bold text-charcoal mb-6">How Advisure works with RIAs</h2>
                         <p className="text-lg text-charcoal/70 leading-relaxed">
-                            We collaborate with RIAs as a <span className="text-advisure-blue font-bold">behind-the-scenes structural design team</span>. You remain the primary relationship owner and investment lead. Advisure handles the complexity of private placement design, implementation, and oversight.
+                            We collaborate with RIAs as a <span className="text-advisure-blue font-bold">behind-the-scenes structural design team</span>. You remain the primary relationship owner and investment lead. Advisure handles the complexity of incorporating PPLI and PPA enabling tax-efficient implementation of private placement strategy design, implementation, and oversight within existing portfolio relationships.
                         </p>
                         <div className="mt-10 p-6 bg-soft-blue rounded-2xl border-l-4 border-advisure-blue">
                             <h3 className="text-xl font-bold text-advisure-blue mb-2">The Result:</h3>
@@ -55,7 +55,7 @@ export default function About() {
                     {/* Process Section */}
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         {[
-                            { step: '01', title: 'Structural Design', desc: 'Collaborative strategy to define the optimal investment and insurance integration.' },
+                            { step: '01', title: 'Structural Design', desc: 'Collaborative strategy to define the optimal asset allocation including insurance and annuity structures to improve outcomes.' },
                             { step: '02', title: 'Implementation', desc: 'Frictionless carrier coordination and streamlined digital documentation.' },
                             { step: '03', title: 'Active Oversight', desc: 'Continuous monitoring of performance, compliance, and tax efficiency.' },
                             { step: '04', title: 'Integrated Reporting', desc: 'Institutional-quality transparency for advisors and clients alike.' },
