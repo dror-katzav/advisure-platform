@@ -2,232 +2,140 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <div className="bg-off-white">
-            {/* Hero */}
-            <div className="bg-advisure-blue py-20 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white">About Advisure</h1>
-                    <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">
-                        Redefining the intersection of public and private / traditional and alternative investment strategies and utilizing institutional quality insurance and annuity structures for the ascending and expanding RIA.
+        <div className="bg-off-white font-sans text-charcoal pb-24">
+            {/* Hero Section */}
+            <div className="bg-advisure-blue py-24 pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden rounded-b-[3rem] lg:rounded-b-[5rem]">
+                <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%22 height=%22100%22 filter=%22url(%23n)%22 opacity=%220.15%22/%3E%3C/svg%3E')] mix-blend-soft-light opacity-50 pointer-events-none"></div>
+
+                <div className="max-w-4xl mx-auto text-center relative z-10">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">About <span className="text-gradient">Advisure</span></h1>
+                    <p className="text-xl text-white/90 font-medium leading-relaxed">
+                        Redefining the intersection of traditional and alternative investment strategies utilizing institutional quality insurance infrastructure.
                     </p>
                 </div>
             </div>
 
-            {/* Vision / How it works */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    {/* Mission Section */}
-                    <div className="bg-white p-12 rounded-3xl shadow-sm border border-advisure-silver/20">
-                        <h2 className="text-advisure-blue text-sm font-bold uppercase tracking-widest mb-4">Our Mission</h2>
-                        <p className="text-2xl md:text-3xl text-charcoal font-semibold leading-snug">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20 space-y-16">
+                
+                {/* Mission & Vision */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="bg-white p-10 lg:p-12 rounded-3xl shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-gold/5 rounded-bl-full"></div>
+                        <h2 className="text-advisure-gold text-sm font-bold uppercase tracking-widest mb-4">Our Mission</h2>
+                        <p className="text-2xl md:text-3xl text-charcoal font-bold leading-snug mb-6">
                             We unify investment advisory and insurance into a single, integrated wealth infrastructure.
                         </p>
-                        <p className="mt-8 text-lg text-charcoal/70 leading-relaxed">
-                            We empower advisors to deliver institutional-quality investment strategies to accredited and qualified investors through technology that simplifies education, enhances decision-making, and streamlines implementation. By reducing complexity and friction, we seek to improve risk-adjusted and after-tax outcomes.
-                        </p>
-                    </div>
-
-                    {/* Vision Section */}
-                    <div className="bg-white p-12 rounded-3xl shadow-sm border border-advisure-silver/20">
-                        <h2 className="text-advisure-blue text-sm font-bold uppercase tracking-widest mb-4">Our Vision</h2>
-                        <p className="text-2xl md:text-3xl text-charcoal font-semibold leading-snug">
-                            To become the trusted infrastructure through which advisors deliver the most sophisticated, tax-efficient wealth solutions in the industry.
-                        </p>
-                        <p className="mt-8 text-lg text-charcoal/70 leading-relaxed">
-                            We believe the future of wealth management is integrated, transparent, and advisor-led — where structure and strategy work together to produce superior long-term outcomes.
-                        </p>
-                    </div>
-
-                {/* Our Philosophy Section */}
-                <div className="bg-advisure-blue p-12 md:p-16 rounded-[3rem] text-white">
-                    <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-advisure-gold text-sm font-bold uppercase tracking-widest mb-4">Our Philosophy</h2>
-                        <p className="text-3xl md:text-4xl font-bold">We believe structure rivals strategy.</p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div>
-                            <div className="text-advisure-gold font-bold text-xl mb-3">01</div>
-                            <h3 className="text-xl font-bold mb-3">Structure is Strategy</h3>
-                            <p className="text-white/70">Optimizing the structural wrapper is as critical as the underlying investment choice.</p>
-                        </div>
-                        <div>
-                            <div className="text-advisure-gold font-bold text-xl mb-3">02</div>
-                            <h3 className="text-xl font-bold mb-3">Tools Drive Decisions</h3>
-                            <p className="text-white/70">Better decisions and clearer conversations come from better analytical tools.</p>
-                        </div>
-                        <div>
-                            <div className="text-advisure-gold font-bold text-xl mb-3">03</div>
-                            <h3 className="text-xl font-bold mb-3">Long-Term Focus</h3>
-                            <p className="text-white/70">Long-term compounding outcomes always beat short-term tax optimization.</p>
-                        </div>
-                        <div>
-                            <div className="text-advisure-gold font-bold text-xl mb-3">04</div>
-                            <h3 className="text-xl font-bold mb-3">Evaluated, Not Sold</h3>
-                            <p className="text-white/70">Private placement should be objectively evaluated as a structure, not sold as a product.</p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* How Advisure works with RIAs */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 className="text-3xl font-bold text-charcoal mb-6">How Advisure works with RIAs</h2>
                         <p className="text-lg text-charcoal/70 leading-relaxed">
-                            We collaborate with RIAs as a <span className="text-advisure-blue font-bold">behind-the-scenes structural design team</span>. You remain the primary relationship owner and investment lead. Advisure handles the complexity of incorporating PPLI and PPA enabling tax-efficient implementation of private placement strategy design, implementation, and oversight within existing portfolio relationships.
+                            We empower advisors to deliver institutional-quality investment strategies to accredited investors through technology that simplifies education, enhances decision-making, and streamlines implementation. We are here to reduce friction and improve after-tax outcomes.
                         </p>
-                        <div className="mt-10 p-6 bg-soft-blue rounded-2xl border-l-4 border-advisure-blue">
-                            <h3 className="text-xl font-bold text-advisure-blue mb-2">The Result:</h3>
-                            <p className="text-charcoal font-medium">
-                                Better client outcomes, deeper relationships, and a more differentiated practice.
-                            </p>
-                        </div>
                     </div>
-                    <div className="relative h-80 bg-advisure-silver/10 rounded-3xl overflow-hidden flex items-center justify-center border border-dashed border-advisure-silver/50">
-                        <span className="text-advisure-silver font-medium italic">Illustrating the Advisor-Advisure Partnership</span>
+
+                    <div className="bg-white p-10 lg:p-12 rounded-3xl shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-blue/5 rounded-bl-full"></div>
+                        <h2 className="text-advisure-blue text-sm font-bold uppercase tracking-widest mb-4">Our Vision</h2>
+                        <p className="text-2xl md:text-3xl text-charcoal font-bold leading-snug mb-6">
+                            To become the trusted infrastructure through which the industry delivers tax-efficient wealth solutions.
+                        </p>
+                        <p className="text-lg text-charcoal/70 leading-relaxed">
+                            We believe the future of wealth management is integrated, transparent, and advisor-led — where the structural wrapper and the investment strategy work perfectly in tandem to produce superior long-term compounding.
+                        </p>
                     </div>
                 </div>
 
-                {/* Visual Content Sections */}
-                <div className="space-y-24">
-                    <div className="text-center">
-                        <h2 className="text-4xl font-bold text-charcoal">The Advisure Approach</h2>
-                        <p className="mt-4 text-xl text-charcoal/60">A structured path to superior after-tax outcomes.</p>
+                {/* Philosophy */}
+                <div className="bg-advisure-blue p-12 lg:p-20 rounded-[3rem] text-white relative overflow-hidden shadow-xl">
+                    <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#C9AE62 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+                    <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
+                        <h2 className="text-advisure-gold text-sm font-bold uppercase tracking-widest mb-4">Our Core Philosophy</h2>
+                        <p className="text-3xl md:text-5xl font-bold leading-tight">We believe structure rivals strategy.</p>
                     </div>
-
-                    {/* Process Section */}
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        {[
-                            { step: '01', title: 'Structural Design', desc: 'Collaborative strategy to define the optimal asset allocation including insurance and annuity structures to improve outcomes.' },
-                            { step: '02', title: 'Implementation', desc: 'Frictionless carrier coordination and streamlined digital documentation.' },
-                            { step: '03', title: 'Active Oversight', desc: 'Continuous monitoring of performance, compliance, and tax efficiency.' },
-                            { step: '04', title: 'Integrated Reporting', desc: 'Institutional-quality transparency for advisors and clients alike.' },
-                        ].map((item, idx) => (
-                            <div key={idx} className="bg-white p-8 rounded-3xl shadow-sm border border-advisure-silver/20 relative group hover:border-advisure-blue/30 transition-all">
-                                <div className="text-5xl font-black text-advisure-blue/5 absolute top-4 right-6 group-hover:text-advisure-blue/10 transition-colors">{item.step}</div>
-                                <h3 className="text-xl font-bold text-charcoal mb-4 relative z-10">{item.title}</h3>
-                                <p className="text-charcoal/70 leading-relaxed relative z-10">{item.desc}</p>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 relative z-10 max-w-5xl mx-auto">
+                        <div className="flex gap-6">
+                            <div className="text-advisure-gold font-bold text-3xl font-mono opacity-50 block mt-1">01</div>
+                            <div>
+                                <h3 className="text-2xl font-bold mb-3">Structure is Strategy</h3>
+                                <p className="text-white/70 leading-relaxed">Optimizing the structural wrapper (tax treatment, control logic) is as critical to long-term wealth as the underlying investment allocations.</p>
                             </div>
-                        ))}
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        {/* Why PPLI Section */}
-                        <div className="bg-advisure-blue p-10 md:p-12 rounded-[3rem] text-white">
-                            <h2 className="text-3xl font-bold mb-8">Why PPLI?</h2>
-                            <ul className="space-y-6">
-                                {[
-                                    { title: 'Tax Alpha', desc: 'Eliminate tax-drag on high-turnover or high-income strategies.' },
-                                    { title: 'Institutional Access', desc: 'Direct exposure to private-market and alternative asset classes.' },
-                                    { title: 'Modern Efficiency', desc: 'Digital workflows replacing legacy insurance friction.' },
-                                    { title: 'Cost Transparency', desc: 'Institutional-level pricing with no hidden layers.' },
-                                ].map((item, idx) => (
-                                    <li key={idx} className="flex gap-4">
-                                        <div className="h-6 w-6 rounded-full bg-advisure-gold flex items-center justify-center shrink-0 mt-1">
-                                            <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
-                                        </div>
-                                        <div>
-                                            <span className="font-bold block text-lg mb-1">{item.title}</span>
-                                            <span className="text-white/70">{item.desc}</span>
-                                        </div>
-                                    </li>
-                                ))}
-                            </ul>
                         </div>
-
-                        {/* Benefits to Advisor Section */}
-                        <div className="bg-white p-10 md:p-12 rounded-[3rem] border border-advisure-silver/20 shadow-sm flex flex-col justify-center">
-                            <h2 className="text-3xl font-bold text-charcoal mb-8">Benefits to the Advisor</h2>
-                            <div className="space-y-8">
-                                {[
-                                    { title: 'Differentiation', desc: 'Offer sophisticated solutions that standard competitors cannot access.' },
-                                    { title: 'Client Retention', desc: 'Deepen relationships by solving complex structural challenges.' },
-                                    { title: 'Scalable Scale', desc: 'Leverage our infrastructure without increasing your firm’s headcount.' },
-                                ].map((item, idx) => (
-                                    <div key={idx} className="border-l-4 border-advisure-gold pl-6">
-                                        <h3 className="text-xl font-bold text-charcoal mb-2">{item.title}</h3>
-                                        <p className="text-charcoal/60 leading-relaxed">{item.desc}</p>
-                                    </div>
-                                ))}
+                        <div className="flex gap-6">
+                            <div className="text-advisure-gold font-bold text-3xl font-mono opacity-50 block mt-1">02</div>
+                            <div>
+                                <h3 className="text-2xl font-bold mb-3">Tools Drive Decisions</h3>
+                                <p className="text-white/70 leading-relaxed">Better decisions require clearer conversations—which in turn require exceptional, data-driven analytical tools that move beyond abstraction.</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-6">
+                            <div className="text-advisure-gold font-bold text-3xl font-mono opacity-50 block mt-1">03</div>
+                            <div>
+                                <h3 className="text-2xl font-bold mb-3">Long-Term Compounding</h3>
+                                <p className="text-white/70 leading-relaxed">We focus on strategies that maximize long-term compounding outcomes, which mathematically dominate short-term tactical optimization.</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-6">
+                            <div className="text-advisure-gold font-bold text-3xl font-mono opacity-50 block mt-1">04</div>
+                            <div>
+                                <h3 className="text-2xl font-bold mb-3">Evaluated, Not Sold</h3>
+                                <p className="text-white/70 leading-relaxed">Private placement should be objectively modeled and evaluated as a structural tool for the portfolio, not peddled as a commission product.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Team Section */}
-                <div className="pt-24 border-t border-advisure-silver/20">
+                <div className="max-w-5xl mx-auto pt-16">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl font-bold text-charcoal">Our Leadership Team</h2>
-                        <p className="mt-4 text-xl text-charcoal/60">Expertise across insurance, investments, and technology.</p>
+                        <h2 className="text-3xl lg:text-4xl font-bold text-charcoal mb-4">Leadership Team</h2>
+                        <p className="text-xl text-charcoal/60">Decades of expertise across institutional investments, carrier distribution, and advanced technology.</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
-                        {/* Zayda Marrie */}
-                        <div className="bg-white p-8 rounded-3xl border border-advisure-silver/10 shadow-sm">
-                            <div className="flex items-center gap-6 mb-6">
-                                <div className="h-20 w-20 rounded-2xl bg-advisure-blue/10 flex items-center justify-center text-advisure-blue text-3xl font-bold">ZM</div>
-                                <div>
-                                    <h3 className="text-2xl font-bold text-charcoal">Zayda Marrie</h3>
-                                    <p className="text-advisure-blue font-semibold">Former Executive, AIG & MetLife</p>
-                                </div>
+                    <div className="space-y-8">
+                        {/* Team Member 1 */}
+                        <div className="bg-white p-8 lg:p-10 rounded-3xl border border-gray-100 shadow-sm hover-lift flex flex-col md:flex-row gap-8 items-start">
+                            <div className="h-24 w-24 shrink-0 rounded-2xl bg-gradient-to-br from-advisure-blue to-advisure-blue/80 flex items-center justify-center text-white text-3xl font-bold shadow-inner">ZM</div>
+                            <div>
+                                <h3 className="text-2xl font-bold text-charcoal mb-1">Zayda Marrie</h3>
+                                <p className="text-advisure-gold font-bold uppercase tracking-wide text-xs mb-4">Former Executive, AIG & MetLife</p>
+                                <p className="text-charcoal/70 leading-relaxed">
+                                    A seasoned leader in the insurance industry, Zayda has over two decades of experience driving product innovation, distribution strategy, and enterprise growth. She successfully led initiatives generating over $5 billion in economic value.
+                                </p>
                             </div>
-                            <p className="text-charcoal/70 leading-relaxed">
-                                A seasoned leader in the insurance industry, Zayda has over two decades of experience driving product innovation, distribution strategy, and enterprise growth. She successfully led initiatives generating over $5 billion in economic value.
-                            </p>
                         </div>
 
-                        {/* Don Plotsky */}
-                        <div className="bg-white p-8 rounded-3xl border border-advisure-silver/10 shadow-sm">
-                            <div className="flex items-center gap-6 mb-6">
-                                <div className="h-20 w-20 rounded-2xl bg-advisure-blue/10 flex items-center justify-center text-advisure-blue text-3xl font-bold">DP</div>
-                                <div>
-                                    <h3 className="text-2xl font-bold text-charcoal">Don Plotsky</h3>
-                                    <p className="text-advisure-blue font-semibold">Co-Founder, Uinta Investment Partners</p>
-                                </div>
+                        {/* Team Member 2 */}
+                        <div className="bg-white p-8 lg:p-10 rounded-3xl border border-gray-100 shadow-sm hover-lift flex flex-col md:flex-row gap-8 items-start">
+                            <div className="h-24 w-24 shrink-0 rounded-2xl bg-gradient-to-br from-advisure-blue to-advisure-blue/80 flex items-center justify-center text-white text-3xl font-bold shadow-inner">DP</div>
+                            <div>
+                                <h3 className="text-2xl font-bold text-charcoal mb-1">Don Plotsky</h3>
+                                <p className="text-advisure-gold font-bold uppercase tracking-wide text-xs mb-4">Co-Founder, Uinta Investment Partners</p>
+                                <p className="text-charcoal/70 leading-relaxed mb-4">
+                                    Don has over 40 years of investment management experience as a leader, innovator, and portfolio manager, previously serving as head of product at Western Asset Management and senior executive at CDC Investment Management Corp.
+                                </p>
                             </div>
-                            <p className="text-charcoal/70 leading-relaxed mb-4">
-                                Don has over 40 years of investment management experience as a leader, innovator and portfolio manager. His primary focus over his career has been on fixed-income and structured products.
-                            </p>
-                            <details className="text-sm text-charcoal/60 cursor-pointer">
-                                <summary className="hover:text-advisure-blue transition-colors">View full bio</summary>
-                                <div className="mt-4 space-y-2">
-                                    <p>Prior to forming Uinta, he served as head of product development and product management at Western Asset Management (2002-2016) and head of the firm’s retail business. He also served on the Management, Strategy and Risk committees.</p>
-                                    <p>Don was a senior executive at CDC Investment Management Corp. (1997-2002) and portfolio manager at Advisers Capital Management (1993-1997), Equitable Capital Management (1988-1993) and Hutton Risk Management (1984-1988). Don earned an MBA in finance and economics from New York University’s Stern School of Business (1988).</p>
-                                </div>
-                            </details>
+                        </div>
+                        
+                        {/* Team Member 3 */}
+                        <div className="bg-white p-8 lg:p-10 rounded-3xl border border-gray-100 shadow-sm hover-lift flex flex-col md:flex-row gap-8 items-start">
+                            <div className="h-24 w-24 shrink-0 rounded-2xl bg-gradient-to-br from-advisure-blue to-advisure-blue/80 flex items-center justify-center text-white text-3xl font-bold shadow-inner">CR</div>
+                            <div>
+                                <h3 className="text-2xl font-bold text-charcoal mb-1">Corey Rickman</h3>
+                                <p className="text-advisure-gold font-bold uppercase tracking-wide text-xs mb-4">Portfolio Analyst, Uinta Investment Partners</p>
+                                <p className="text-charcoal/70 leading-relaxed mb-4">
+                                    Corey brings institutional accounting and portfolio analysis experience from Stone Coast Fund Services and SEI Family Office Services, with a focus on income-based solutions in private markets.
+                                </p>
+                            </div>
                         </div>
 
-                        {/* Corey Rickman */}
-                        <div className="bg-white p-8 rounded-3xl border border-advisure-silver/10 shadow-sm">
-                            <div className="flex items-center gap-6 mb-6">
-                                <div className="h-20 w-20 rounded-2xl bg-advisure-blue/10 flex items-center justify-center text-advisure-blue text-3xl font-bold">CR</div>
-                                <div>
-                                    <h3 className="text-2xl font-bold text-charcoal">Corey Rickman</h3>
-                                    <p className="text-advisure-blue font-semibold">Portfolio Analyst, Uinta Investment Partners</p>
-                                </div>
+                        {/* Team Member 4 */}
+                        <div className="bg-white p-8 lg:p-10 rounded-3xl border border-gray-100 shadow-sm hover-lift flex flex-col md:flex-row gap-8 items-start">
+                            <div className="h-24 w-24 shrink-0 rounded-2xl bg-gradient-to-br from-advisure-blue to-advisure-blue/80 flex items-center justify-center text-white text-3xl font-bold shadow-inner">DK</div>
+                            <div>
+                                <h3 className="text-2xl font-bold text-charcoal mb-1">Dror Katzav</h3>
+                                <p className="text-advisure-gold font-bold uppercase tracking-wide text-xs mb-4">Founder & CEO, Atidot</p>
+                                <p className="text-charcoal/70 leading-relaxed mb-4">
+                                    Founder and CEO of Atidot, an AI-driven platform for life insurers. Prior to founding Atidot, Dror spent 11 years as a technology leader in elite IDF Intelligence units. He is a recognized visionary on applying AI to life insurance.
+                                </p>
                             </div>
-                            <p className="text-charcoal/70 leading-relaxed">
-                                Corey is a Portfolio Analyst focused on income-based investment solutions in private markets. He joined Uinta in February 2025 after prior roles in fund accounting and client service at Stone Coast Fund Services and SEI Family Office Services, where he worked on accounting and reporting for investment funds.
-                            </p>
-                        </div>
-
-                        {/* Dror Katzav */}
-                        <div className="bg-white p-8 rounded-3xl border border-advisure-silver/10 shadow-sm">
-                            <div className="flex items-center gap-6 mb-6">
-                                <div className="h-20 w-20 rounded-2xl bg-advisure-blue/10 flex items-center justify-center text-advisure-blue text-3xl font-bold">DK</div>
-                                <div>
-                                    <h3 className="text-2xl font-bold text-charcoal">Dror Katzav</h3>
-                                    <p className="text-advisure-blue font-semibold">Founder & CEO, Atidot</p>
-                                </div>
-                            </div>
-                            <p className="text-charcoal/70 leading-relaxed mb-4">
-                                Dror is the Founder and CEO of Atidot, an AI-driven, cloud-based platform for life insurers. Before co-founding Atidot, he spent 11 years as an officer and technology leader in elite units of the IDF Intelligence Corps.
-                            </p>
-                            <details className="text-sm text-charcoal/60 cursor-pointer">
-                                <summary className="hover:text-advisure-blue transition-colors">View full bio</summary>
-                                <div className="mt-4 space-y-2">
-                                    <p>An experienced data scientist, Dror has consulted for leading technology startups on advanced machine learning models. He holds a B.Sc. in Physics and Mathematics from the Hebrew University and an M.Sc. in Management Sciences from Tel Aviv University.</p>
-                                    <p>Dror is a frequent speaker at global insurtech conferences and is recognized as a visionary on applying AI to life insurance. He lives in the San Francisco Bay Area.</p>
-                                </div>
-                            </details>
                         </div>
                     </div>
                 </div>
