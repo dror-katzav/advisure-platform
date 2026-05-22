@@ -45,7 +45,7 @@ export function Navbar() {
                             Login
                         </Link>
                         <Link href="/schedule-demo" className="bg-advisure-blue text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-advisure-blue/90 transition-all shadow-sm hover:shadow-md">
-                            Schedule a demo
+                            Schedule a Conversation
                         </Link>
                     </div>
                 </div>

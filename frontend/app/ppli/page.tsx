@@ -9,90 +9,106 @@ export default function PPLI() {
 
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <span className="text-advisure-gold font-bold tracking-widest uppercase text-sm mb-4 block">Education & Strategy</span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Private Placement Demystified</h1>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Understanding Private Placement</h1>
                     <p className="text-xl text-white/90 font-medium leading-relaxed">
-                        Understanding how and why to wrap institutional-quality investments in tax-advantaged insurance structures.
+                        A clearer view of a misunderstood structure.
                     </p>
                 </div>
             </div>
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20 space-y-12">
-                
-                {/* WHAT */}
+
+                {/* Section 1: A Structure — Not a Product */}
                 <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-gold/5 rounded-bl-full"></div>
-                    <h2 className="text-3xl font-bold text-advisure-blue mb-4">What is PPLI / PPVA?</h2>
-                    <p className="text-lg text-charcoal/80 leading-relaxed">
-                        Private Placement Life Insurance (PPLI) and Private Placement Variable Annuities (PPVA) are institutional, tax-efficient structures designed exclusively for accredited and qualified purchasers. 
+                    <h2 className="text-3xl font-bold text-advisure-blue mb-4">A Structure — Not a Product</h2>
+                    <p className="text-lg text-charcoal/80 leading-relaxed mb-4">
+                        Private Placement Life Insurance (PPLI) and Private Placement Variable Annuities (PPVA) are institutional, tax-advantaged structures that allow investments to grow more efficiently within a defined framework.
                     </p>
-                    <p className="text-lg text-charcoal/80 leading-relaxed mt-4">
-                        Unlike retail insurance products that offer limited, pre-packaged investment options, these private structures allow high-net-worth investors to hold a highly customized portfolio of alternative and traditional assets within the tax-advantaged wrapper of an insurance policy.
+                    <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
+                        It is not a standalone product — but a way to hold and manage assets. These structures are designed for high net worth and ultra-high net worth clients, providing powerful advantages such as:
                     </p>
-                </div>
-
-                {/* WHY */}
-                <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-blue/5 rounded-bl-full"></div>
-                    <h2 className="text-3xl font-bold text-advisure-blue mb-6">Why does it matter?</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-off-white p-6 rounded-2xl">
-                            <h3 className="text-xl font-bold mb-2">Eliminate Tax Drag</h3>
-                            <p className="text-charcoal/70">Ordinary income tax and short-term capital gains on highly inefficient or high-turnover strategies severely degrade compounding. Structuring via PPLI defers or eliminates this drag entirely.</p>
+                            <h3 className="text-lg font-bold mb-2 text-charcoal">Institutional Investment Access</h3>
+                            <p className="text-charcoal/70 text-sm leading-relaxed">Access premier alternative investments and asset managers, often at lower minimums than otherwise available.</p>
                         </div>
                         <div className="bg-off-white p-6 rounded-2xl">
-                            <h3 className="text-xl font-bold mb-2">Institutional Access</h3>
-                            <p className="text-charcoal/70">Access hedge funds, private credit, and other elite alternative managers that are otherwise prohibitively taxed when held in traditional brokerage accounts.</p>
+                            <h3 className="text-lg font-bold mb-2 text-charcoal">Tax Alpha</h3>
+                            <p className="text-charcoal/70 text-sm leading-relaxed">Shield high-tax, high-turnover strategies from ongoing drag, significantly improving long-term compounding and performance.</p>
+                        </div>
+                        <div className="bg-off-white p-6 rounded-2xl">
+                            <h3 className="text-lg font-bold mb-2 text-charcoal">Diversification &amp; Flexibility</h3>
+                            <p className="text-charcoal/70 text-sm leading-relaxed">Effectively diversify beyond traditional asset classes with greater control over structure and planning.</p>
+                        </div>
+                        <div className="bg-off-white p-6 rounded-2xl">
+                            <h3 className="text-lg font-bold mb-2 text-charcoal">Estate &amp; Legacy Control</h3>
+                            <p className="text-charcoal/70 text-sm leading-relaxed">Enhance legacy planning with greater control over how your assets are held, taxed, and transferred over time.</p>
                         </div>
                     </div>
                 </div>
 
-                {/* WHO */}
+                {/* Section 2: Why It's Been Underutilized */}
                 <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-gold/5 rounded-bl-full"></div>
-                    <h2 className="text-3xl font-bold text-advisure-blue mb-6">Who is it for?</h2>
-                    <ul className="space-y-4">
-                        <li className="flex items-center gap-4 bg-off-white p-4 rounded-xl border border-gray-100">
-                            <svg className="w-6 h-6 text-advisure-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                            <span className="font-semibold">Accredited Investors / Qualified Purchasers</span>
-                        </li>
-                        <li className="flex items-center gap-4 bg-off-white p-4 rounded-xl border border-gray-100">
-                            <svg className="w-6 h-6 text-advisure-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                            <span className="font-semibold">Clients with long time horizons (10+ years to maximize compound growth)</span>
-                        </li>
-                        <li className="flex items-center gap-4 bg-off-white p-4 rounded-xl border border-gray-100">
-                            <svg className="w-6 h-6 text-advisure-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                            <span className="font-semibold">Individuals in high-tax geographic environments</span>
-                        </li>
-                        <li className="flex items-center gap-4 bg-off-white p-4 rounded-xl border border-gray-100">
-                            <svg className="w-6 h-6 text-advisure-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                            <span className="font-semibold">Families seeking sophisticated, multi-generational wealth transfer</span>
-                        </li>
-                    </ul>
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-blue/5 rounded-bl-full"></div>
+                    <h2 className="text-3xl font-bold text-advisure-blue mb-4">The Gap Has Been Infrastructure</h2>
+                    <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
+                        Despite its benefits, adoption has been limited. Not because the strategy doesn&apos;t work — but because the systems to deliver it haven&apos;t existed.
+                    </p>
+                    <div className="space-y-4">
+                        {[
+                            { label: 'Operational complexity', detail: 'Fragmented carrier processes, manual paperwork, and disconnected workflows have made implementation impractical at scale.' },
+                            { label: 'Lack of integration', detail: 'Private placement has historically lived outside the systems RIAs rely on — no reporting integration, no visibility into positions.' },
+                            { label: 'Limited accessibility for RIAs', detail: 'Without dedicated infrastructure, independent advisors couldn\'t offer these strategies efficiently to their clients.' },
+                        ].map(({ label, detail }) => (
+                            <div key={label} className="bg-off-white p-5 rounded-2xl border border-gray-100">
+                                <h3 className="font-bold text-charcoal mb-1">{label}</h3>
+                                <p className="text-sm text-charcoal/60 leading-relaxed">{detail}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
-                {/* WHEN / HOW */}
+                {/* Section 3: Common Misconceptions */}
                 <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
-                    <h2 className="text-3xl font-bold text-advisure-blue mb-6">How RIAs Implement the Strategy</h2>
-                    <p className="text-lg text-charcoal/80 mb-6">
-                        RIAs deploy private placement structures as a complement to the core taxable portfolio, carving out the most tax-inefficient components of a client's asset allocation and moving them into the PPLI or PPVA wrapper.
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-gold/5 rounded-bl-full"></div>
+                    <h2 className="text-3xl font-bold text-advisure-blue mb-4">Reframing the Category</h2>
+                    <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
+                        Common misconceptions have kept private placement from its full potential. Here&apos;s a clearer picture:
                     </p>
-                    <div className="flex gap-4 p-6 bg-soft-blue border-l-4 border-advisure-blue rounded-r-2xl">
-                        <svg className="w-8 h-8 text-advisure-blue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                        <p className="text-charcoal/80 font-medium">
-                            <strong className="text-charcoal block mb-1">When not to use it:</strong> 
-                            It is generally not appropriate for short-term liquidity needs or for pure buy-and-hold strategies of highly tax-efficient assets (like broad-market index ETFs), where the structural costs of insurance might outweigh the tax benefits.
+                    <div className="space-y-4">
+                        {[
+                            { myth: '"It\'s just insurance"', reality: 'It\'s a portfolio structure — a tax-advantaged wrapper for holding institutional investments.' },
+                            { myth: '"It\'s too complex"', reality: 'Complexity has historically been operational, not structural. With the right infrastructure, it\'s no more complex than any other allocation.' },
+                            { myth: '"It doesn\'t fit my model"', reality: 'It hasn\'t — until now. Advisure is built to make private placement fit seamlessly into the RIA model.' },
+                        ].map(({ myth, reality }) => (
+                            <div key={myth} className="grid grid-cols-1 md:grid-cols-2 gap-4 p-5 bg-off-white rounded-2xl border border-gray-100">
+                                <div className="flex items-start gap-3">
+                                    <div className="w-2 h-2 rounded-full bg-red-400 shrink-0 mt-2"></div>
+                                    <span className="text-charcoal/60 italic text-sm leading-relaxed">{myth}</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <div className="w-2 h-2 rounded-full bg-advisure-blue shrink-0 mt-2"></div>
+                                    <span className="text-charcoal font-medium text-sm leading-relaxed">{reality}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="mt-8 p-6 bg-soft-blue border-l-4 border-advisure-blue rounded-r-2xl">
+                        <p className="text-charcoal/80 font-medium italic">
+                            With the right infrastructure, private placement becomes practical — not theoretical.
                         </p>
                     </div>
                 </div>
 
                 {/* Bridge to Platform */}
-                <div className="mt-16 text-center">
+                <div className="mt-8 text-center">
                     <h3 className="text-2xl font-bold mb-6">Understanding the strategy is just step one.</h3>
                     <p className="text-lg text-charcoal/70 mb-8 max-w-2xl mx-auto">
-                        Historically, the friction of implementation has prevented widespread adoption. Advisure provides the platform to easily model, execute, and monitor these strategies at scale.
+                        Advisure provides the platform to easily model, implement, and monitor these strategies at scale — without disrupting how you already manage assets.
                     </p>
                     <Link href="/platform" className="hover-lift inline-flex items-center justify-center px-10 py-5 bg-advisure-blue text-white text-lg font-bold rounded-full shadow-lg">
-                        Explore the Implementation Platform
+                        Explore the Platform
                     </Link>
                 </div>
 
