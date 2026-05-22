@@ -1,28 +1,22 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 
 export function Navbar() {
     return (
         <nav style={{
             position: 'fixed', top: 0, left: 0, right: 0, zIndex: 200,
             display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            padding: '0.85rem 3rem',
+            padding: '1rem 3rem',
             background: 'rgba(20,20,18,0.94)',
             backdropFilter: 'blur(16px)',
             WebkitBackdropFilter: 'blur(16px)',
             borderBottom: '0.5px solid rgba(255,255,255,0.05)',
         }}>
-            <Link href="/" style={{ display: 'flex', alignItems: 'baseline', gap: 2, textDecoration: 'none' }}>
-                <Image
-                    src="/advisure-logo.svg"
-                    alt="Advisure"
-                    width={180}
-                    height={48}
-                    priority
-                    style={{ height: 44, width: 'auto', filter: 'brightness(0) invert(1)' }}
-                />
+            <Link href="/" style={{ display: 'flex', alignItems: 'baseline', gap: 3, textDecoration: 'none' }}>
+                <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 28, color: '#C9A96E', fontWeight: 600, lineHeight: 1 }}>A</span>
+                <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 28, color: '#FAFAF8', fontWeight: 300, lineHeight: 1 }}>dvisure</span>
+                <span style={{ fontSize: 13, color: '#8B6F3E', opacity: 0.7, fontWeight: 400, marginLeft: 1 }}>.ai</span>
             </Link>
 
             <ul style={{ listStyle: 'none', display: 'flex', gap: '2.5rem', margin: 0, padding: 0 }}>
