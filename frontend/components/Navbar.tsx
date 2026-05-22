@@ -23,11 +23,14 @@ export function Navbar() {
                         <Link href="/" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
                             Home
                         </Link>
+                        <Link href="/platform" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
+                            Platform
+                        </Link>
                         <Link href="/ria-experience" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            RIA experience
+                            Financial Model
                         </Link>
                         <Link href="/ppli" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            PPLI Education
+                            Education
                         </Link>
                         <Link href="/partners" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
                             Partners
@@ -36,7 +39,7 @@ export function Navbar() {
                             About
                         </Link>
                         <Link href="/contact" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            Contact Us
+                            Contact
                         </Link>
                     </div>
 

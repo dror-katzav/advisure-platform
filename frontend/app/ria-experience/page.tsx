@@ -69,10 +69,10 @@ export default function CalculatorPage() {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h1 className="text-4xl font-bold text-charcoal sm:text-5xl">
-                        RIA Experience: <span className="text-advisure-blue">PPLI Impact</span>
+                        Model the <span className="text-advisure-blue">Tax Alpha</span>
                     </h1>
                     <p className="mt-6 text-xl text-charcoal/60 max-w-2xl mx-auto">
-                        Quantify the tax alpha of a Private Placement Life Insurance strategy for your high-net-worth clients.
+                        Enter your client&apos;s portfolio assumptions and see the after-tax difference a private placement structure delivers over time.
                     </p>
                 </div>
 

@@ -10,23 +10,23 @@ export default function About() {
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">About <span className="text-gradient">Advisure</span></h1>
                     <p className="text-xl text-white/90 font-medium leading-relaxed">
-                        Redefining the intersection of traditional and alternative investment strategies utilizing institutional quality insurance infrastructure.
+                        Building the infrastructure that makes private placement a core part of how RIAs manage wealth.
                     </p>
                 </div>
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20 space-y-16">
-                
+
                 {/* Mission & Vision */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="bg-white p-10 lg:p-12 rounded-3xl shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-gold/5 rounded-bl-full"></div>
                         <h2 className="text-advisure-gold text-sm font-bold uppercase tracking-widest mb-4">Our Mission</h2>
                         <p className="text-2xl md:text-3xl text-charcoal font-bold leading-snug mb-6">
-                            We unify investment advisory and insurance into a single, integrated wealth infrastructure.
+                            We make private placement a seamless, integrated part of the RIA portfolio — not a side conversation.
                         </p>
                         <p className="text-lg text-charcoal/70 leading-relaxed">
-                            We empower advisors to deliver institutional-quality investment strategies to accredited investors through technology that simplifies education, enhances decision-making, and streamlines implementation. We are here to reduce friction and improve after-tax outcomes.
+                            Advisure eliminates the operational complexity that has kept private placement underutilized. We built the infrastructure so advisors can allocate, implement, and manage these strategies without changing how they run their business.
                         </p>
                     </div>
 
@@ -34,10 +34,10 @@ export default function About() {
                         <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-blue/5 rounded-bl-full"></div>
                         <h2 className="text-advisure-blue text-sm font-bold uppercase tracking-widest mb-4">Our Vision</h2>
                         <p className="text-2xl md:text-3xl text-charcoal font-bold leading-snug mb-6">
-                            To become the trusted infrastructure through which the industry delivers tax-efficient wealth solutions.
+                            A future where every RIA can deliver institutional-quality tax efficiency at scale.
                         </p>
                         <p className="text-lg text-charcoal/70 leading-relaxed">
-                            We believe the future of wealth management is integrated, transparent, and advisor-led — where the structural wrapper and the investment strategy work perfectly in tandem to produce superior long-term compounding.
+                            We believe private placement insurance should be as accessible and operationally straightforward as any other portfolio allocation — visible in your reporting, aligned with your economics, and beneficial to your clients.
                         </p>
                     </div>
                 </div>
@@ -49,34 +49,34 @@ export default function About() {
                         <h2 className="text-advisure-gold text-sm font-bold uppercase tracking-widest mb-4">Our Core Philosophy</h2>
                         <p className="text-3xl md:text-5xl font-bold leading-tight">We believe structure rivals strategy.</p>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 relative z-10 max-w-5xl mx-auto">
                         <div className="flex gap-6">
                             <div className="text-advisure-gold font-bold text-3xl font-mono opacity-50 block mt-1">01</div>
                             <div>
-                                <h3 className="text-2xl font-bold mb-3">Structure is Strategy</h3>
-                                <p className="text-white/70 leading-relaxed">Optimizing the structural wrapper (tax treatment, control logic) is as critical to long-term wealth as the underlying investment allocations.</p>
+                                <h3 className="text-2xl font-bold mb-3">Integration, Not Addition</h3>
+                                <p className="text-white/70 leading-relaxed">Private placement should fit inside the RIA model — not require a separate workflow, separate reporting, or separate conversation with the client.</p>
                             </div>
                         </div>
                         <div className="flex gap-6">
                             <div className="text-advisure-gold font-bold text-3xl font-mono opacity-50 block mt-1">02</div>
                             <div>
-                                <h3 className="text-2xl font-bold mb-3">Tools Drive Decisions</h3>
-                                <p className="text-white/70 leading-relaxed">Better decisions require clearer conversations—which in turn require exceptional, data-driven analytical tools that move beyond abstraction.</p>
+                                <h3 className="text-2xl font-bold mb-3">Infrastructure Drives Adoption</h3>
+                                <p className="text-white/70 leading-relaxed">The reason private placement has been underutilized isn&apos;t a lack of demand — it&apos;s a lack of infrastructure. We&apos;re here to fix that.</p>
                             </div>
                         </div>
                         <div className="flex gap-6">
                             <div className="text-advisure-gold font-bold text-3xl font-mono opacity-50 block mt-1">03</div>
                             <div>
                                 <h3 className="text-2xl font-bold mb-3">Long-Term Compounding</h3>
-                                <p className="text-white/70 leading-relaxed">We focus on strategies that maximize long-term compounding outcomes, which mathematically dominate short-term tactical optimization.</p>
+                                <p className="text-white/70 leading-relaxed">Tax drag compounds just as powerfully as returns. Eliminating it over a 20-year horizon creates measurable, meaningful wealth for clients.</p>
                             </div>
                         </div>
                         <div className="flex gap-6">
                             <div className="text-advisure-gold font-bold text-3xl font-mono opacity-50 block mt-1">04</div>
                             <div>
                                 <h3 className="text-2xl font-bold mb-3">Evaluated, Not Sold</h3>
-                                <p className="text-white/70 leading-relaxed">Private placement should be objectively modeled and evaluated as a structural tool for the portfolio, not peddled as a commission product.</p>
+                                <p className="text-white/70 leading-relaxed">Private placement should be objectively modeled and evaluated as a structural tool for the portfolio, not pushed as a commission product.</p>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,6 @@ export default function About() {
                     </div>
 
                     <div className="space-y-8">
-                        {/* Team Member 1 */}
                         <div className="bg-white p-8 lg:p-10 rounded-3xl border border-gray-100 shadow-sm hover-lift flex flex-col md:flex-row gap-8 items-start">
                             <div className="h-24 w-24 shrink-0 rounded-2xl bg-gradient-to-br from-advisure-blue to-advisure-blue/80 flex items-center justify-center text-white text-3xl font-bold shadow-inner">ZM</div>
                             <div>
@@ -102,37 +101,34 @@ export default function About() {
                             </div>
                         </div>
 
-                        {/* Team Member 2 */}
                         <div className="bg-white p-8 lg:p-10 rounded-3xl border border-gray-100 shadow-sm hover-lift flex flex-col md:flex-row gap-8 items-start">
                             <div className="h-24 w-24 shrink-0 rounded-2xl bg-gradient-to-br from-advisure-blue to-advisure-blue/80 flex items-center justify-center text-white text-3xl font-bold shadow-inner">DP</div>
                             <div>
                                 <h3 className="text-2xl font-bold text-charcoal mb-1">Don Plotsky</h3>
                                 <p className="text-advisure-gold font-bold uppercase tracking-wide text-xs mb-4">Co-Founder, Uinta Investment Partners</p>
-                                <p className="text-charcoal/70 leading-relaxed mb-4">
+                                <p className="text-charcoal/70 leading-relaxed">
                                     Don has over 40 years of investment management experience as a leader, innovator, and portfolio manager, previously serving as head of product at Western Asset Management and senior executive at CDC Investment Management Corp.
                                 </p>
                             </div>
                         </div>
-                        
-                        {/* Team Member 3 */}
+
                         <div className="bg-white p-8 lg:p-10 rounded-3xl border border-gray-100 shadow-sm hover-lift flex flex-col md:flex-row gap-8 items-start">
                             <div className="h-24 w-24 shrink-0 rounded-2xl bg-gradient-to-br from-advisure-blue to-advisure-blue/80 flex items-center justify-center text-white text-3xl font-bold shadow-inner">CR</div>
                             <div>
                                 <h3 className="text-2xl font-bold text-charcoal mb-1">Corey Rickman</h3>
                                 <p className="text-advisure-gold font-bold uppercase tracking-wide text-xs mb-4">Portfolio Analyst, Uinta Investment Partners</p>
-                                <p className="text-charcoal/70 leading-relaxed mb-4">
+                                <p className="text-charcoal/70 leading-relaxed">
                                     Corey brings institutional accounting and portfolio analysis experience from Stone Coast Fund Services and SEI Family Office Services, with a focus on income-based solutions in private markets.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Team Member 4 */}
                         <div className="bg-white p-8 lg:p-10 rounded-3xl border border-gray-100 shadow-sm hover-lift flex flex-col md:flex-row gap-8 items-start">
                             <div className="h-24 w-24 shrink-0 rounded-2xl bg-gradient-to-br from-advisure-blue to-advisure-blue/80 flex items-center justify-center text-white text-3xl font-bold shadow-inner">DK</div>
                             <div>
                                 <h3 className="text-2xl font-bold text-charcoal mb-1">Dror Katzav</h3>
                                 <p className="text-advisure-gold font-bold uppercase tracking-wide text-xs mb-4">Founder & CEO, Atidot</p>
-                                <p className="text-charcoal/70 leading-relaxed mb-4">
+                                <p className="text-charcoal/70 leading-relaxed">
                                     Founder and CEO of Atidot, an AI-driven platform for life insurers. Prior to founding Atidot, Dror spent 11 years as a technology leader in elite IDF Intelligence units. He is a recognized visionary on applying AI to life insurance.
                                 </p>
                             </div>

@@ -55,20 +55,21 @@ export default function Platform() {
                     </p>
                 </div>
 
-                <div className="space-y-8 mb-24">
-                    {/* Step 1 */}
-                    <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 lg:p-12 hover-lift">
+                <div className="space-y-6 mb-24">
+                    {/* Step 1 — Allocate */}
+                    <div className="bg-white rounded-3xl shadow-sm border-l-4 border-advisure-gold border border-gray-100 p-8 lg:p-12 hover-lift">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                            <div className="lg:col-span-1">
-                                <div className="w-12 h-12 bg-advisure-gold text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">1</div>
+                            <div className="lg:col-span-1 flex items-start">
+                                <div className="w-12 h-12 bg-advisure-gold text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg shrink-0">1</div>
                             </div>
                             <div className="lg:col-span-5">
-                                <h3 className="text-2xl font-bold text-advisure-blue mb-3">Allocate</h3>
+                                <p className="text-xs font-bold text-advisure-gold uppercase tracking-widest mb-2">You do this</p>
+                                <h3 className="text-2xl font-bold text-charcoal mb-3">Allocate</h3>
                                 <p className="text-charcoal/70 leading-relaxed">
                                     Incorporate private placement as part of your portfolio strategy — just like any other allocation.
                                 </p>
                             </div>
-                            <div className="lg:col-span-6">
+                            <div className="lg:col-span-6 bg-amber-50 rounded-2xl p-5">
                                 <ul className="space-y-3">
                                     {[
                                         'Align with client objectives',
@@ -85,19 +86,20 @@ export default function Platform() {
                         </div>
                     </div>
 
-                    {/* Step 2 */}
-                    <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 lg:p-12 hover-lift">
+                    {/* Step 2 — Structure & Integrate */}
+                    <div className="bg-white rounded-3xl shadow-sm border-l-4 border-advisure-blue border border-gray-100 p-8 lg:p-12 hover-lift">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                            <div className="lg:col-span-1">
-                                <div className="w-12 h-12 bg-advisure-gold text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">2</div>
+                            <div className="lg:col-span-1 flex items-start">
+                                <div className="w-12 h-12 bg-advisure-blue text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg shrink-0">2</div>
                             </div>
                             <div className="lg:col-span-5">
-                                <h3 className="text-2xl font-bold text-advisure-blue mb-3">Structure &amp; Integrate</h3>
+                                <p className="text-xs font-bold text-advisure-blue uppercase tracking-widest mb-2">Advisure handles this</p>
+                                <h3 className="text-2xl font-bold text-charcoal mb-3">Structure &amp; Integrate</h3>
                                 <p className="text-charcoal/70 leading-relaxed">
                                     Advisure coordinates across carriers, managers, and legal structures to implement the allocation.
                                 </p>
                             </div>
-                            <div className="lg:col-span-6">
+                            <div className="lg:col-span-6 bg-blue-50 rounded-2xl p-5">
                                 <ul className="space-y-3">
                                     {[
                                         'Carrier selection and structuring',
@@ -106,7 +108,7 @@ export default function Platform() {
                                         'Fully managed operational process',
                                     ].map((item) => (
                                         <li key={item} className="flex items-center gap-3 text-charcoal/70">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-advisure-gold shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 rounded-full bg-advisure-blue shrink-0"></div>
                                             {item}
                                         </li>
                                     ))}
@@ -115,19 +117,20 @@ export default function Platform() {
                         </div>
                     </div>
 
-                    {/* Step 3 */}
-                    <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 lg:p-12 hover-lift">
+                    {/* Step 3 — Manage */}
+                    <div className="bg-white rounded-3xl shadow-sm border-l-4 border-emerald-500 border border-gray-100 p-8 lg:p-12 hover-lift">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                            <div className="lg:col-span-1">
-                                <div className="w-12 h-12 bg-advisure-gold text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">3</div>
+                            <div className="lg:col-span-1 flex items-start">
+                                <div className="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg shrink-0">3</div>
                             </div>
                             <div className="lg:col-span-5">
-                                <h3 className="text-2xl font-bold text-advisure-blue mb-3">Manage</h3>
+                                <p className="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">Back in your hands</p>
+                                <h3 className="text-2xl font-bold text-charcoal mb-3">Manage</h3>
                                 <p className="text-charcoal/70 leading-relaxed">
                                     Ongoing management is fully aligned with how you already operate.
                                 </p>
                             </div>
-                            <div className="lg:col-span-6">
+                            <div className="lg:col-span-6 bg-emerald-50 rounded-2xl p-5">
                                 <ul className="space-y-3">
                                     {[
                                         'Visibility within your reporting ecosystem',
@@ -135,7 +138,7 @@ export default function Platform() {
                                         'Seamless experience for both advisor and client',
                                     ].map((item) => (
                                         <li key={item} className="flex items-center gap-3 text-charcoal/70">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-advisure-gold shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></div>
                                             {item}
                                         </li>
                                     ))}

@@ -3,9 +3,9 @@ export default function ScheduleDemo() {
         <div className="bg-off-white min-h-screen">
             <div className="bg-advisure-blue py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white">Schedule a Demo</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white">Schedule a Conversation</h1>
                     <p className="mt-6 text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">
-                        See how Advisure can transform your RIA practice with institutional-quality PPLI infrastructure.
+                        Let&apos;s talk about how private placement fits into your portfolio strategy — and how Advisure makes it operationally seamless.
                     </p>
                 </div>
             </div>

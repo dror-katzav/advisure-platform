@@ -14,7 +14,7 @@ export default function Home() {
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-4 py-1.5 text-xs text-white/90 shadow-soft mb-8">
                 <span className="h-2 w-2 rounded-full bg-advisure-gold animate-pulse" />
-                The Private Placement Insurance Platform Built for RIAs
+                Built for RIAs
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold text-white leading-[1.1] tracking-tight">
                 Turn Private Placement Insurance into a <span className="text-gradient">Core Portfolio Allocation</span> for Your Clients
@@ -134,12 +134,9 @@ export default function Home() {
 
             <div className="bg-advisure-blue p-10 rounded-3xl text-center shadow-xl">
               <h3 className="text-2xl font-bold text-white mb-4">Advisure exists to close the gap.</h3>
-              <p className="text-white/80 mb-8">
-                We didn&apos;t build a new product. We built the infrastructure that makes private placement usable inside the RIA model.
+              <p className="text-white/80 leading-relaxed">
+                We didn&apos;t build a new product. We built the infrastructure that makes private placement usable inside the RIA model — integrated into your existing workflow, visible in your reporting, and scalable across your client base.
               </p>
-              <div className="inline-flex justify-center items-center w-16 h-16 rounded-full bg-white/10 animate-bounce">
-                <svg className="w-8 h-8 text-advisure-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
-              </div>
             </div>
           </div>
         </div>
@@ -191,30 +188,28 @@ export default function Home() {
       <section className="py-24 bg-advisure-blue text-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#C9AE62 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Advisor Economics</h2>
-              <p className="text-white/80 text-lg leading-relaxed mb-8">With the right infrastructure in place:</p>
-              <div className="space-y-4">
-                {[
-                  'Allocations remain part of your managed portfolio',
-                  'Assets stay visible within your AUM ecosystem',
-                  'Advisors participate in ongoing economics',
-                  'Clients benefit from improved after-tax outcomes',
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-4">
-                    <svg className="w-5 h-5 text-advisure-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-white/90 font-medium">{item}</span>
-                  </div>
-                ))}
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Advisor Economics</h2>
+            <p className="text-white/70 text-lg leading-relaxed">With the right infrastructure in place, private placement stops being a side conversation and becomes a core part of how you manage wealth.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+            {[
+              { stat: 'AUM Visible', desc: 'Assets stay within your reporting ecosystem — not held away' },
+              { stat: 'Fully Integrated', desc: 'Allocations remain part of your managed portfolio' },
+              { stat: 'Advisor Economics', desc: 'Advisors participate in ongoing economics on placed assets' },
+              { stat: 'After-Tax Alpha', desc: 'Clients benefit from measurably improved after-tax outcomes' },
+            ].map(({ stat, desc }) => (
+              <div key={stat} className="bg-white/10 rounded-2xl p-6 text-center border border-white/10">
+                <p className="text-advisure-gold font-bold text-lg mb-2">{stat}</p>
+                <p className="text-white/70 text-sm leading-relaxed">{desc}</p>
               </div>
-            </div>
-            <div className="glass p-10 rounded-3xl text-center">
-              <p className="text-3xl font-bold text-white leading-snug mb-4">
-                Private placement insurance is no longer a segmented side strategy.
-              </p>
-              <p className="text-advisure-gold font-semibold text-lg">It&apos;s an integrated core portfolio allocation.</p>
-            </div>
+            ))}
+          </div>
+          <div className="max-w-3xl mx-auto border-t border-white/10 pt-12 text-center">
+            <p className="text-2xl md:text-3xl font-bold text-white leading-snug">
+              Private placement insurance is no longer a segmented side strategy.
+            </p>
+            <p className="text-advisure-gold font-semibold text-xl mt-3">It&apos;s an integrated core portfolio allocation.</p>
           </div>
         </div>
       </section>

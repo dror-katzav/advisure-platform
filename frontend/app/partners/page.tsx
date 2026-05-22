@@ -70,12 +70,13 @@ export default function Partners() {
                 <div>
                     <div className="text-center mb-8">
                         <h3 className="text-sm font-bold text-advisure-blue tracking-widest uppercase mb-2">Our Integration Network</h3>
-                        <h2 className="text-3xl font-bold text-charcoal">Connecting the Ecosystem</h2>
+                        <h2 className="text-3xl font-bold text-charcoal mb-3">Connecting the Ecosystem</h2>
+                        <p className="text-charcoal/50 text-sm">Partnerships actively forming — logos coming soon.</p>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                            <div key={i} className="bg-white h-32 rounded-2xl border border-gray-200 flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:border-advisure-gold transition-all hover-lift cursor-default shadow-sm text-center px-4">
-                                <span className="text-advisure-silver/60 font-bold uppercase tracking-widest text-xs">Partner {i}</span>
+                            <div key={i} className="bg-white h-32 rounded-2xl border border-dashed border-gray-200 flex items-center justify-center opacity-50 cursor-default shadow-sm text-center px-4">
+                                <span className="text-charcoal/30 font-medium text-xs">Coming soon</span>
                             </div>
                         ))}
                     </div>

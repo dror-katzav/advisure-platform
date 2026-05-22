@@ -76,25 +76,42 @@ export default function PPLI() {
                     <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
                         Common misconceptions have kept private placement from its full potential. Here&apos;s a clearer picture:
                     </p>
-                    <div className="space-y-4">
+
+                    {/* Column headers */}
+                    <div className="grid grid-cols-2 gap-4 mb-2 px-1">
+                        <p className="text-xs font-bold uppercase tracking-widest text-red-400">Common belief</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-advisure-blue">The reality</p>
+                    </div>
+
+                    <div className="space-y-3">
                         {[
-                            { myth: '"It\'s just insurance"', reality: 'It\'s a portfolio structure — a tax-advantaged wrapper for holding institutional investments.' },
-                            { myth: '"It\'s too complex"', reality: 'Complexity has historically been operational, not structural. With the right infrastructure, it\'s no more complex than any other allocation.' },
-                            { myth: '"It doesn\'t fit my model"', reality: 'It hasn\'t — until now. Advisure is built to make private placement fit seamlessly into the RIA model.' },
+                            {
+                                myth: '"It\'s just insurance"',
+                                reality: 'It\'s a portfolio structure — a tax-advantaged wrapper for holding institutional investments.',
+                            },
+                            {
+                                myth: '"It\'s too complex"',
+                                reality: 'Complexity has historically been operational, not structural. With the right infrastructure, it\'s no more complex than any other allocation.',
+                            },
+                            {
+                                myth: '"It doesn\'t fit my model"',
+                                reality: 'It hasn\'t — until now. Advisure is built to make private placement fit seamlessly into the RIA model.',
+                            },
                         ].map(({ myth, reality }) => (
-                            <div key={myth} className="grid grid-cols-1 md:grid-cols-2 gap-4 p-5 bg-off-white rounded-2xl border border-gray-100">
-                                <div className="flex items-start gap-3">
-                                    <div className="w-2 h-2 rounded-full bg-red-400 shrink-0 mt-2"></div>
-                                    <span className="text-charcoal/60 italic text-sm leading-relaxed">{myth}</span>
+                            <div key={myth} className="grid grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-gray-100">
+                                <div className="bg-red-50 p-5 flex items-start gap-3 border-r border-gray-100">
+                                    <span className="text-red-300 font-bold text-lg leading-none mt-0.5 shrink-0">✕</span>
+                                    <span className="text-charcoal/60 italic text-sm leading-relaxed line-through decoration-red-200">{myth}</span>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="w-2 h-2 rounded-full bg-advisure-blue shrink-0 mt-2"></div>
+                                <div className="bg-blue-50 p-5 flex items-start gap-3">
+                                    <span className="text-advisure-blue font-bold text-lg leading-none mt-0.5 shrink-0">✓</span>
                                     <span className="text-charcoal font-medium text-sm leading-relaxed">{reality}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    <div className="mt-8 p-6 bg-soft-blue border-l-4 border-advisure-blue rounded-r-2xl">
+
+                    <div className="mt-8 p-6 bg-blue-50 border-l-4 border-advisure-blue rounded-r-2xl">
                         <p className="text-charcoal/80 font-medium italic">
                             With the right infrastructure, private placement becomes practical — not theoretical.
                         </p>
