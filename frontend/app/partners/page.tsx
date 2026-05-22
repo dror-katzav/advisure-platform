@@ -1,129 +1,142 @@
+import Link from 'next/link';
+
 export default function Partners() {
     return (
-        <div className="bg-off-white font-sans text-charcoal pb-24">
-            {/* Hero Section */}
-            <div className="bg-advisure-blue py-24 pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden rounded-b-[3rem] lg:rounded-b-[5rem]">
-                <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%22 height=%22100%22 filter=%22url(%23n)%22 opacity=%220.15%22/%3E%3C/svg%3E')] mix-blend-soft-light opacity-50 pointer-events-none"></div>
+        <div style={{ background: '#141412', color: '#FAFAF8' }}>
 
-                <div className="max-w-4xl mx-auto text-center relative z-10">
-                    <span className="text-advisure-gold font-bold tracking-widest uppercase text-sm mb-4 block">Our Ecosystem</span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Partner With Advisure</h1>
-                    <p className="text-xl text-white/90 font-medium leading-relaxed max-w-3xl mx-auto">
+            {/* ── HERO ──────────────────────────────── */}
+            <section className="grain-overlay relative overflow-hidden" style={{ paddingTop: '12rem', paddingBottom: '7rem', paddingLeft: '3rem', paddingRight: '3rem' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(29,158,117,0.05) 0%, transparent 70%)', pointerEvents: 'none' }} />
+                <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
+                    <div className="reveal">
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.5rem' }}>Our Ecosystem</span>
+                    </div>
+                    <h1 className="reveal d1 font-serif" style={{ fontSize: 'clamp(48px,7vw,88px)', fontWeight: 300, lineHeight: 1.08, letterSpacing: '-0.01em', maxWidth: 700, marginBottom: '2rem' }}>
+                        Partner With Advisure
+                    </h1>
+                    <p className="reveal d2" style={{ fontSize: 18, color: '#888780', maxWidth: 540, lineHeight: 1.75 }}>
                         Helping bring private placement insurance into the modern RIA ecosystem.
                     </p>
                 </div>
-            </div>
+            </section>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20 space-y-12">
-
-                {/* Section 1: Built for Strategic Collaboration */}
-                <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-16">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                        <div>
-                            <h2 className="text-3xl font-bold text-charcoal mb-6">Built for Strategic Collaboration</h2>
-                            <p className="text-lg text-charcoal/70 mb-4 leading-relaxed">
-                                At Advisure, we don&apos;t just list logos. We integrate our partners&apos; capabilities directly into our technology platform so advisors can seamlessly deploy sophisticated solutions.
-                            </p>
-                            <p className="text-lg font-semibold text-advisure-blue mb-8">
-                                Not a referral network. A fully integrated ecosystem.
-                            </p>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                {[
-                                    'Access tier-one carrier support without operational friction',
-                                    'Leverage institutional alternative asset strategies',
-                                    'Streamline funding and monitoring across custodians',
-                                    'Provide best-in-class integrated reporting to clients',
-                                ].map((item) => (
-                                    <div key={item} className="bg-off-white p-5 rounded-2xl border border-gray-100 flex gap-3 items-start">
-                                        <div className="mt-1 bg-advisure-gold/20 p-1.5 rounded-full shrink-0">
-                                            <svg className="w-3 h-3 text-advisure-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
-                                        </div>
-                                        <span className="text-charcoal/80 font-medium text-sm">{item}</span>
-                                    </div>
-                                ))}
-                            </div>
+            {/* ── BUILT FOR STRATEGIC COLLABORATION ─── */}
+            <section style={{ borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '7rem 3rem' }}>
+                <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'start' }}>
+                    <div className="reveal-l">
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.25rem' }}>The Approach</span>
+                        <h2 className="font-serif" style={{ fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 300, lineHeight: 1.2, marginBottom: '1.5rem' }}>
+                            Built for Strategic Collaboration
+                        </h2>
+                        <p style={{ color: '#888780', lineHeight: 1.75, marginBottom: '1rem', fontSize: 15 }}>
+                            At Advisure, we don&apos;t just list logos. We integrate our partners&apos; capabilities directly into our technology platform so advisors can seamlessly deploy sophisticated solutions.
+                        </p>
+                        <p style={{ color: '#C9A96E', fontSize: 15, marginBottom: '2.5rem' }}>
+                            Not a referral network. A fully integrated ecosystem.
+                        </p>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                            {[
+                                'Access tier-one carrier support without operational friction',
+                                'Leverage institutional alternative asset strategies',
+                                'Streamline funding and monitoring across custodians',
+                                'Provide best-in-class integrated reporting to clients',
+                            ].map((item) => (
+                                <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', padding: '0.85rem 1rem', background: '#1E1E1B', border: '0.5px solid rgba(255,255,255,0.06)' }}>
+                                    <span style={{ color: '#C9A96E', flexShrink: 0 }}>✓</span>
+                                    <span style={{ fontSize: 13, color: '#888780' }}>{item}</span>
+                                </div>
+                            ))}
                         </div>
-                        <div>
-                            <h3 className="text-sm font-bold text-charcoal/50 uppercase tracking-widest mb-4">We work with</h3>
-                            <div className="space-y-3">
-                                {[
-                                    { label: 'RIAs', desc: 'Independent advisors delivering private placement strategies to HNW clients.' },
-                                    { label: 'Insurance Carriers', desc: 'PPLI and PPVA carriers integrated directly into our submission and onboarding workflows.' },
-                                    { label: 'Wealth Platforms', desc: 'Portfolio reporting and data platforms enabling seamless position visibility.' },
-                                    { label: 'Asset Managers', desc: 'Institutional managers accessible within the private placement structure.' },
-                                    { label: 'Strategic Distribution Partners', desc: 'Organizations helping bring this capability to the broader RIA ecosystem.' },
-                                ].map(({ label, desc }) => (
-                                    <div key={label} className="flex gap-4 items-start p-4 bg-off-white rounded-xl border border-gray-100">
-                                        <div className="w-2 h-2 rounded-full bg-advisure-blue shrink-0 mt-2"></div>
-                                        <div>
-                                            <span className="font-bold text-charcoal">{label}</span>
-                                            <p className="text-sm text-charcoal/60 mt-0.5">{desc}</p>
-                                        </div>
+                    </div>
+
+                    <div className="reveal">
+                        <span style={{ fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#5F5E5A', display: 'block', marginBottom: '1.5rem' }}>We work with</span>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'rgba(255,255,255,0.06)' }}>
+                            {[
+                                { label: 'RIAs', desc: 'Independent advisors delivering private placement strategies to HNW clients.' },
+                                { label: 'Insurance Carriers', desc: 'PPLI and PPVA carriers integrated directly into our submission and onboarding workflows.' },
+                                { label: 'Wealth Platforms', desc: 'Portfolio reporting and data platforms enabling seamless position visibility.' },
+                                { label: 'Asset Managers', desc: 'Institutional managers accessible within the private placement structure.' },
+                                { label: 'Strategic Distribution Partners', desc: 'Organizations helping bring this capability to the broader RIA ecosystem.' },
+                            ].map(({ label, desc }) => (
+                                <div key={label} style={{ background: '#141412', padding: '1.5rem 1.75rem', display: 'flex', gap: '1.25rem', alignItems: 'flex-start' }}>
+                                    <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#1D9E75', flexShrink: 0, marginTop: 6 }} />
+                                    <div>
+                                        <p style={{ fontSize: 14, fontWeight: 500, color: '#FAFAF8', marginBottom: '0.2rem' }}>{label}</p>
+                                        <p style={{ fontSize: 12, color: '#888780', lineHeight: 1.6 }}>{desc}</p>
                                     </div>
-                                ))}
-                            </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
+            </section>
 
-                {/* Partner logo placeholders */}
-                <div>
-                    <div className="text-center mb-8">
-                        <h3 className="text-sm font-bold text-advisure-blue tracking-widest uppercase mb-2">Our Integration Network</h3>
-                        <h2 className="text-3xl font-bold text-charcoal mb-3">Connecting the Ecosystem</h2>
-                        <p className="text-charcoal/50 text-sm">Partnerships actively forming — logos coming soon.</p>
+            {/* ── INTEGRATION NETWORK ──────────────── */}
+            <section style={{ background: '#0E0E0C', borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '7rem 3rem' }}>
+                <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+                    <div className="reveal" style={{ marginBottom: '4rem', textAlign: 'center' }}>
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.25rem' }}>Our Integration Network</span>
+                        <h2 className="font-serif" style={{ fontSize: 'clamp(32px,4vw,52px)', fontWeight: 300, lineHeight: 1.15, marginBottom: '1rem' }}>
+                            Connecting the Ecosystem
+                        </h2>
+                        <p style={{ color: '#5F5E5A', fontSize: 13 }}>Partnerships actively forming — logos coming soon.</p>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1px', background: 'rgba(255,255,255,0.06)' }}>
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                            <div key={i} className="bg-white h-32 rounded-2xl border border-dashed border-gray-200 flex items-center justify-center opacity-50 cursor-default shadow-sm text-center px-4">
-                                <span className="text-charcoal/30 font-medium text-xs">Coming soon</span>
+                            <div key={i} className="reveal" style={{ background: '#141412', height: 120, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0.4 }}>
+                                <span style={{ fontSize: 10, color: '#5F5E5A', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Coming soon</span>
                             </div>
                         ))}
                     </div>
                 </div>
+            </section>
 
-                {/* Section 2: How We Work Together */}
-                <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 md:p-12">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                        <div>
-                            <h2 className="text-3xl font-bold text-charcoal mb-6">A Flexible Partnership Approach</h2>
-                            <p className="text-lg text-charcoal/70 leading-relaxed mb-6">Partnerships may include:</p>
-                            <div className="space-y-4">
-                                {[
-                                    'Education and market development',
-                                    'Advisor engagement and onboarding',
-                                    'Integration and platform alignment',
-                                    'Ongoing collaboration and support',
-                                ].map((item) => (
-                                    <div key={item} className="flex items-center gap-4 p-4 bg-off-white rounded-xl border border-gray-100">
-                                        <div className="w-2 h-2 rounded-full bg-advisure-gold shrink-0"></div>
-                                        <span className="font-medium text-charcoal/80">{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* Section 3: Why it Matters */}
-                        <div className="bg-advisure-blue p-8 rounded-2xl text-white">
-                            <h2 className="text-2xl font-bold mb-4">Expanding Access to a Better Structure</h2>
-                            <p className="text-white/80 leading-relaxed mb-6">
-                                Private placement has historically been limited by access and complexity. Together, we can bring it into broader use — aligned with how RIAs actually operate.
-                            </p>
-                            <p className="text-advisure-gold font-semibold text-lg">
-                                We&apos;re building the infrastructure for the next phase of wealth management.
-                            </p>
+            {/* ── HOW WE WORK TOGETHER ─────────────── */}
+            <section style={{ borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '7rem 3rem' }}>
+                <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+                    <div className="reveal-l">
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.25rem' }}>The Partnership</span>
+                        <h2 className="font-serif" style={{ fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 300, lineHeight: 1.2, marginBottom: '1.5rem' }}>
+                            A Flexible Partnership Approach
+                        </h2>
+                        <p style={{ color: '#888780', lineHeight: 1.75, marginBottom: '2rem', fontSize: 15 }}>Partnerships may include:</p>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'rgba(255,255,255,0.06)' }}>
+                            {['Education and market development', 'Advisor engagement and onboarding', 'Integration and platform alignment', 'Ongoing collaboration and support'].map((item) => (
+                                <div key={item} style={{ background: '#141412', padding: '1.25rem 1.5rem', display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                                    <div style={{ width: 4, height: 4, borderRadius: '50%', background: '#C9A96E', flexShrink: 0 }} />
+                                    <span style={{ fontSize: 14, color: '#888780' }}>{item}</span>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                </div>
 
-                {/* CTA */}
-                <div className="text-center">
-                    <h3 className="text-2xl font-bold text-charcoal mb-6">Interested in becoming a platform partner?</h3>
-                    <a href="/contact" className="hover-lift inline-flex items-center justify-center px-8 py-4 bg-advisure-blue text-white text-lg font-bold rounded-full shadow-lg">
-                        Get in Touch
-                    </a>
+                    <div className="reveal" style={{ background: '#1E1E1B', border: '0.5px solid rgba(255,255,255,0.08)', borderTop: '3px solid #1D9E75', padding: '3rem' }}>
+                        <h2 className="font-serif" style={{ fontSize: 28, fontWeight: 300, color: '#FAFAF8', marginBottom: '1.25rem', lineHeight: 1.3 }}>
+                            Expanding Access to a Better Structure
+                        </h2>
+                        <p style={{ color: '#888780', lineHeight: 1.75, marginBottom: '1.5rem', fontSize: 14 }}>
+                            Private placement has historically been limited by access and complexity. Together, we can bring it into broader use — aligned with how RIAs actually operate.
+                        </p>
+                        <p style={{ color: '#C9A96E', fontSize: 15 }}>
+                            We&apos;re building the infrastructure for the next phase of wealth management.
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            {/* ── CTA ─────────────────────────────── */}
+            <section style={{ background: '#0E0E0C', borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '8rem 3rem', textAlign: 'center' }}>
+                <div className="reveal" style={{ maxWidth: 560, margin: '0 auto' }}>
+                    <h2 className="font-serif" style={{ fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 300, lineHeight: 1.2, marginBottom: '2rem' }}>
+                        Interested in becoming a platform partner?
+                    </h2>
+                    <Link href="/contact" className="btn-outline btn-outline-lg">
+                        Get in Touch
+                    </Link>
+                </div>
+            </section>
         </div>
     );
 }

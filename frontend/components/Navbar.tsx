@@ -1,57 +1,70 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
 export function Navbar() {
     return (
-        <nav className="bg-white border-b border-advisure-silver/30 sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-20">
-                    <div className="flex items-center">
-                        <Link href="/" className="flex items-center">
-                            <Image
-                                src="/advisure-logo.svg"
-                                alt="Advisure Logo"
-                                width={320}
-                                height={80}
-                                priority
-                                className="h-16 md:h-20 w-auto"
-                            />
-                        </Link>
-                    </div>
+        <nav style={{
+            position: 'fixed', top: 0, left: 0, right: 0, zIndex: 200,
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            padding: '1.1rem 3rem',
+            background: 'rgba(20,20,18,0.94)',
+            backdropFilter: 'blur(16px)',
+            WebkitBackdropFilter: 'blur(16px)',
+            borderBottom: '0.5px solid rgba(255,255,255,0.05)',
+        }}>
+            <Link href="/" style={{ display: 'flex', alignItems: 'baseline', gap: 2, textDecoration: 'none' }}>
+                <Image
+                    src="/advisure-logo.svg"
+                    alt="Advisure"
+                    width={140}
+                    height={36}
+                    priority
+                    style={{ height: 32, width: 'auto', filter: 'brightness(0) invert(1)' }}
+                />
+            </Link>
 
-                    <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-8">
-                        <Link href="/" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            Home
+            <ul style={{ listStyle: 'none', display: 'flex', gap: '2.5rem', margin: 0, padding: 0 }}>
+                {[
+                    { href: '/platform',       label: 'Platform' },
+                    { href: '/ria-experience', label: 'Financial Model' },
+                    { href: '/ppli',           label: 'Education' },
+                    { href: '/partners',       label: 'Partners' },
+                    { href: '/about',          label: 'About' },
+                ].map(({ href, label }) => (
+                    <li key={href}>
+                        <Link href={href} style={{
+                            fontSize: 13, color: '#888780', textDecoration: 'none',
+                            letterSpacing: '0.03em', transition: 'color 0.2s',
+                        }}
+                            onMouseEnter={e => (e.currentTarget.style.color = '#FAFAF8')}
+                            onMouseLeave={e => (e.currentTarget.style.color = '#888780')}
+                        >
+                            {label}
                         </Link>
-                        <Link href="/platform" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            Platform
-                        </Link>
-                        <Link href="/ria-experience" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            Financial Model
-                        </Link>
-                        <Link href="/ppli" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            Education
-                        </Link>
-                        <Link href="/partners" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            Partners
-                        </Link>
-                        <Link href="/about" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            About
-                        </Link>
-                        <Link href="/contact" className="text-charcoal hover:text-advisure-blue px-1 pt-1 text-sm font-medium transition-colors">
-                            Contact
-                        </Link>
-                    </div>
+                    </li>
+                ))}
+            </ul>
 
-                    <div className="flex items-center space-x-4">
-                        <Link href="/login" className="text-charcoal hover:text-advisure-blue text-sm font-medium transition-colors">
-                            Login
-                        </Link>
-                        <Link href="/schedule-demo" className="bg-advisure-blue text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-advisure-blue/90 transition-all shadow-sm hover:shadow-md">
-                            Schedule a Conversation
-                        </Link>
-                    </div>
-                </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                <Link href="/login" style={{ fontSize: 13, color: '#888780', textDecoration: 'none', letterSpacing: '0.03em' }}>
+                    Login
+                </Link>
+                <Link href="/schedule-demo" style={{
+                    fontSize: 12, fontWeight: 500, letterSpacing: '0.09em', textTransform: 'uppercase',
+                    padding: '9px 22px',
+                    border: '0.5px solid rgba(255,255,255,0.25)',
+                    color: '#FAFAF8',
+                    background: 'transparent',
+                    textDecoration: 'none',
+                    transition: 'all 0.2s',
+                }}
+                    onMouseEnter={e => { e.currentTarget.style.background = '#FAFAF8'; e.currentTarget.style.color = '#141412'; }}
+                    onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#FAFAF8'; }}
+                >
+                    Request Access
+                </Link>
             </div>
         </nav>
     );

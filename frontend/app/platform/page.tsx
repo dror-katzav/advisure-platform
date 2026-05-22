@@ -2,193 +2,174 @@ import Link from 'next/link';
 
 export default function Platform() {
     return (
-        <div className="bg-off-white font-sans text-charcoal">
-            {/* Hero Section */}
-            <div className="bg-advisure-blue py-24 pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden rounded-b-[3rem] lg:rounded-b-[5rem]">
-                <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%22 height=%22100%22 filter=%22url(%23n)%22 opacity=%220.15%22/%3E%3C/svg%3E')] mix-blend-soft-light opacity-50 pointer-events-none"></div>
+        <div style={{ background: '#141412', color: '#FAFAF8' }}>
 
-                <div className="max-w-7xl mx-auto text-center relative z-10">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">How Advisure <span className="text-gradient">Works</span></h1>
-                    <p className="text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed mb-10">
+            {/* ── HERO ──────────────────────────────── */}
+            <section className="grain-overlay relative overflow-hidden" style={{ paddingTop: '12rem', paddingBottom: '7rem', paddingLeft: '3rem', paddingRight: '3rem' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(46,125,212,0.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
+                <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
+                    <div className="reveal">
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.5rem' }}>The Platform</span>
+                    </div>
+                    <h1 className="reveal d1 font-serif" style={{ fontSize: 'clamp(48px,7vw,88px)', fontWeight: 300, lineHeight: 1.08, letterSpacing: '-0.01em', maxWidth: 780, marginBottom: '2rem' }}>
+                        How Advisure Works
+                    </h1>
+                    <p className="reveal d2" style={{ fontSize: 18, color: '#888780', maxWidth: 560, lineHeight: 1.75 }}>
                         Private placement insurance — integrated into your strategies, without the operational friction and complexity.
                     </p>
                 </div>
-            </div>
+            </section>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-20">
-
-                {/* Overview */}
-                <div className="bg-white rounded-[2rem] shadow-2xl border border-gray-100 p-8 lg:p-12 mb-16">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div>
-                            <h2 className="text-3xl font-bold text-charcoal mb-6">A Simpler Way to Implement Private Placement</h2>
-                            <p className="text-lg text-charcoal/70 mb-4 leading-relaxed">
-                                Advisure brings together RIAs, carriers, and asset managers into a single, integrated workflow — removing the friction that has historically limited adoption.
-                            </p>
-                            <p className="text-lg text-charcoal/70 leading-relaxed">
-                                You maintain your investment process. We handle the complexity behind the scenes.
-                            </p>
-                        </div>
-                        <div className="bg-off-white rounded-2xl p-8 border border-gray-200">
-                            <div className="space-y-4">
-                                {[
-                                    'Fully integrated into your portfolio workflows',
-                                    'Visible within your reporting ecosystem',
-                                    'Operationally seamless across carriers and managers',
-                                    'Scalable across client portfolios',
-                                ].map((item) => (
-                                    <div key={item} className="flex gap-4 items-start">
-                                        <span className="text-advisure-blue mt-1 font-bold">✓</span>
-                                        <span className="text-charcoal/80 font-medium">{item}</span>
-                                    </div>
-                                ))}
+            {/* ── OVERVIEW ─────────────────────────── */}
+            <section style={{ borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '5rem 3rem' }}>
+                <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+                    <div className="reveal-l">
+                        <h2 className="font-serif" style={{ fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 300, lineHeight: 1.2, marginBottom: '1.5rem' }}>
+                            A Simpler Way to Implement Private Placement
+                        </h2>
+                        <p style={{ color: '#888780', lineHeight: 1.75, marginBottom: '1.25rem', fontSize: 15 }}>
+                            Advisure brings together RIAs, carriers, and asset managers into a single, integrated workflow — removing the friction that has historically limited adoption.
+                        </p>
+                        <p style={{ color: '#888780', lineHeight: 1.75, fontSize: 15 }}>
+                            You maintain your investment process. We handle the complexity behind the scenes.
+                        </p>
+                    </div>
+                    <div className="reveal" style={{ background: '#1E1E1B', border: '0.5px solid rgba(255,255,255,0.08)', padding: '2.5rem' }}>
+                        {[
+                            'Fully integrated into your portfolio workflows',
+                            'Visible within your reporting ecosystem',
+                            'Operationally seamless across carriers and managers',
+                            'Scalable across your entire client base',
+                        ].map((item) => (
+                            <div key={item} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start', padding: '0.85rem 0', borderBottom: '0.5px solid rgba(255,255,255,0.06)' }}>
+                                <span style={{ color: '#C9A96E', flexShrink: 0, fontWeight: 500 }}>✓</span>
+                                <span style={{ fontSize: 14, color: '#888780' }}>{item}</span>
                             </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
+            </section>
 
-                {/* The 3-Step Process */}
-                <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-4xl font-bold text-charcoal mb-6">From Allocation to Ongoing Management</h2>
-                    <p className="text-xl text-charcoal/70">
-                        Three steps. One integrated workflow.
-                    </p>
-                </div>
+            {/* ── THREE STEPS ──────────────────────── */}
+            <section style={{ background: '#0E0E0C', borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '7rem 3rem' }}>
+                <div style={{ maxWidth: 1200, margin: '0 auto' }}>
 
-                <div className="space-y-6 mb-24">
-                    {/* Step 1 — Allocate */}
-                    <div className="bg-white rounded-3xl shadow-sm border-l-4 border-advisure-gold border border-gray-100 p-8 lg:p-12 hover-lift">
-                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                            <div className="lg:col-span-1 flex items-start">
-                                <div className="w-12 h-12 bg-advisure-gold text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg shrink-0">1</div>
-                            </div>
-                            <div className="lg:col-span-5">
-                                <p className="text-xs font-bold text-advisure-gold uppercase tracking-widest mb-2">You do this</p>
-                                <h3 className="text-2xl font-bold text-charcoal mb-3">Allocate</h3>
-                                <p className="text-charcoal/70 leading-relaxed">
+                    <div className="reveal" style={{ textAlign: 'center', marginBottom: '5rem' }}>
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.25rem' }}>The Process</span>
+                        <h2 className="font-serif" style={{ fontSize: 'clamp(32px,4vw,52px)', fontWeight: 300, lineHeight: 1.15 }}>
+                            From Allocation to Ongoing Management
+                        </h2>
+                        <p style={{ color: '#888780', marginTop: '1rem', fontSize: 15 }}>Three steps. One integrated workflow.</p>
+                    </div>
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'rgba(255,255,255,0.06)' }}>
+
+                        {/* Step 1 — Allocate */}
+                        <div className="reveal" style={{ background: '#141412', padding: '3rem', display: 'grid', gridTemplateColumns: '80px 1fr 1fr', gap: '3rem', alignItems: 'start', borderLeft: '3px solid #C9A96E' }}>
+                            <span style={{ fontSize: 11, fontFamily: 'monospace', color: '#5F5E5A' }}>01</span>
+                            <div>
+                                <span style={{ fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#C9A96E', display: 'block', marginBottom: '1rem' }}>You do this</span>
+                                <h3 className="font-serif" style={{ fontSize: 32, fontWeight: 300, color: '#FAFAF8', marginBottom: '0.75rem' }}>Allocate</h3>
+                                <p style={{ fontSize: 14, color: '#888780', lineHeight: 1.75 }}>
                                     Incorporate private placement as part of your portfolio strategy — just like any other allocation.
                                 </p>
                             </div>
-                            <div className="lg:col-span-6 bg-amber-50 rounded-2xl p-5">
-                                <ul className="space-y-3">
-                                    {[
-                                        'Align with client objectives',
-                                        'Allocate alongside traditional and alternative assets',
-                                        'No change to your portfolio construction approach',
-                                    ].map((item) => (
-                                        <li key={item} className="flex items-center gap-3 text-charcoal/70">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-advisure-gold shrink-0"></div>
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Step 2 — Structure & Integrate */}
-                    <div className="bg-white rounded-3xl shadow-sm border-l-4 border-advisure-blue border border-gray-100 p-8 lg:p-12 hover-lift">
-                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                            <div className="lg:col-span-1 flex items-start">
-                                <div className="w-12 h-12 bg-advisure-blue text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg shrink-0">2</div>
-                            </div>
-                            <div className="lg:col-span-5">
-                                <p className="text-xs font-bold text-advisure-blue uppercase tracking-widest mb-2">Advisure handles this</p>
-                                <h3 className="text-2xl font-bold text-charcoal mb-3">Structure &amp; Integrate</h3>
-                                <p className="text-charcoal/70 leading-relaxed">
-                                    Advisure coordinates across carriers, managers, and legal structures to implement the allocation.
-                                </p>
-                            </div>
-                            <div className="lg:col-span-6 bg-blue-50 rounded-2xl p-5">
-                                <ul className="space-y-3">
-                                    {[
-                                        'Carrier selection and structuring',
-                                        'Integration with underlying investments',
-                                        'Elimination of manual workflows',
-                                        'Fully managed operational process',
-                                    ].map((item) => (
-                                        <li key={item} className="flex items-center gap-3 text-charcoal/70">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-advisure-blue shrink-0"></div>
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Step 3 — Manage */}
-                    <div className="bg-white rounded-3xl shadow-sm border-l-4 border-emerald-500 border border-gray-100 p-8 lg:p-12 hover-lift">
-                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                            <div className="lg:col-span-1 flex items-start">
-                                <div className="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg shrink-0">3</div>
-                            </div>
-                            <div className="lg:col-span-5">
-                                <p className="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">Back in your hands</p>
-                                <h3 className="text-2xl font-bold text-charcoal mb-3">Manage</h3>
-                                <p className="text-charcoal/70 leading-relaxed">
-                                    Ongoing management is fully aligned with how you already operate.
-                                </p>
-                            </div>
-                            <div className="lg:col-span-6 bg-emerald-50 rounded-2xl p-5">
-                                <ul className="space-y-3">
-                                    {[
-                                        'Visibility within your reporting ecosystem',
-                                        'Ongoing monitoring and servicing',
-                                        'Seamless experience for both advisor and client',
-                                    ].map((item) => (
-                                        <li key={item} className="flex items-center gap-3 text-charcoal/70">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></div>
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Behind the Scenes */}
-                <div className="bg-off-white rounded-3xl border border-gray-200 p-8 lg:p-12 mb-16">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h2 className="text-3xl font-bold text-charcoal mb-6">We Handle the Complexity — So You Don&apos;t Have To</h2>
-                            <p className="text-lg text-charcoal/70 leading-relaxed mb-6">
-                                Private placement has historically required navigating fragmented processes across multiple parties. Advisure centralizes that complexity into a single platform — coordinating:
-                            </p>
-                            <div className="space-y-3">
-                                {['Insurance carriers', 'Investment managers', 'Legal and administrative workflows'].map((item) => (
-                                    <div key={item} className="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100">
-                                        <div className="w-2 h-2 rounded-full bg-advisure-blue shrink-0"></div>
-                                        <span className="font-semibold text-charcoal/80">{item}</span>
+                            <div style={{ background: 'rgba(201,169,110,0.04)', border: '0.5px solid rgba(201,169,110,0.15)', padding: '1.5rem' }}>
+                                {['Align with client objectives', 'Allocate alongside traditional and alternative assets', 'No change to your portfolio construction approach'].map((item) => (
+                                    <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', padding: '0.5rem 0' }}>
+                                        <div style={{ width: 4, height: 4, borderRadius: '50%', background: '#C9A96E', flexShrink: 0, marginTop: 6 }} />
+                                        <span style={{ fontSize: 13, color: '#888780' }}>{item}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
-                        <div className="text-center bg-white rounded-2xl p-10 border border-gray-100">
-                            <p className="text-2xl font-bold text-charcoal mb-3 leading-snug">What was once manual and disconnected</p>
-                            <p className="text-advisure-blue font-bold text-xl">now becomes streamlined and scalable.</p>
+
+                        {/* Step 2 — Structure & Integrate */}
+                        <div className="reveal" style={{ background: '#141412', padding: '3rem', display: 'grid', gridTemplateColumns: '80px 1fr 1fr', gap: '3rem', alignItems: 'start', borderLeft: '3px solid #2E7DD4' }}>
+                            <span style={{ fontSize: 11, fontFamily: 'monospace', color: '#5F5E5A' }}>02</span>
+                            <div>
+                                <span style={{ fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#2E7DD4', display: 'block', marginBottom: '1rem' }}>Advisure handles this</span>
+                                <h3 className="font-serif" style={{ fontSize: 32, fontWeight: 300, color: '#FAFAF8', marginBottom: '0.75rem' }}>Structure &amp; Integrate</h3>
+                                <p style={{ fontSize: 14, color: '#888780', lineHeight: 1.75 }}>
+                                    Advisure coordinates across carriers, managers, and legal structures to implement the allocation.
+                                </p>
+                            </div>
+                            <div style={{ background: 'rgba(46,125,212,0.04)', border: '0.5px solid rgba(46,125,212,0.15)', padding: '1.5rem' }}>
+                                {['Carrier selection and structuring', 'Integration with underlying investments', 'Elimination of manual workflows', 'Fully managed operational process'].map((item) => (
+                                    <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', padding: '0.5rem 0' }}>
+                                        <div style={{ width: 4, height: 4, borderRadius: '50%', background: '#2E7DD4', flexShrink: 0, marginTop: 6 }} />
+                                        <span style={{ fontSize: 13, color: '#888780' }}>{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Step 3 — Manage */}
+                        <div className="reveal" style={{ background: '#141412', padding: '3rem', display: 'grid', gridTemplateColumns: '80px 1fr 1fr', gap: '3rem', alignItems: 'start', borderLeft: '3px solid #1D9E75' }}>
+                            <span style={{ fontSize: 11, fontFamily: 'monospace', color: '#5F5E5A' }}>03</span>
+                            <div>
+                                <span style={{ fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#1D9E75', display: 'block', marginBottom: '1rem' }}>Back in your hands</span>
+                                <h3 className="font-serif" style={{ fontSize: 32, fontWeight: 300, color: '#FAFAF8', marginBottom: '0.75rem' }}>Manage</h3>
+                                <p style={{ fontSize: 14, color: '#888780', lineHeight: 1.75 }}>
+                                    Ongoing management is fully aligned with how you already operate.
+                                </p>
+                            </div>
+                            <div style={{ background: 'rgba(29,158,117,0.04)', border: '0.5px solid rgba(29,158,117,0.15)', padding: '1.5rem' }}>
+                                {['Visibility within your reporting ecosystem', 'Ongoing monitoring and servicing', 'Seamless experience for advisor and client'].map((item) => (
+                                    <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', padding: '0.5rem 0' }}>
+                                        <div style={{ width: 4, height: 4, borderRadius: '50%', background: '#1D9E75', flexShrink: 0, marginTop: 6 }} />
+                                        <span style={{ fontSize: 13, color: '#888780' }}>{item}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                {/* Final CTA */}
-                <div className="bg-advisure-blue text-white rounded-[3rem] p-12 lg:p-20 text-center shadow-xl relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-advisure-gold/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
-
-                    <div className="relative z-10 max-w-3xl mx-auto">
-                        <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to see it in action?</h2>
-                        <p className="text-xl text-white/80 mb-10">
-                            Book a conversation to see how Advisure strips away the complexity of private placement so you can scale institutional solutions for your clients.
+            {/* ── WE HANDLE THE COMPLEXITY ─────────── */}
+            <section style={{ borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '7rem 3rem' }}>
+                <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+                    <div className="reveal-l">
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.25rem' }}>Behind the Scenes</span>
+                        <h2 className="font-serif" style={{ fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 300, lineHeight: 1.2, marginBottom: '1.5rem' }}>
+                            We Handle the Complexity — So You Don&apos;t Have To
+                        </h2>
+                        <p style={{ color: '#888780', lineHeight: 1.75, marginBottom: '2rem', fontSize: 15 }}>
+                            Private placement has historically required navigating fragmented processes across multiple parties. Advisure centralizes that complexity into a single platform — coordinating:
                         </p>
-                        <Link href="/schedule-demo" className="hover-lift inline-flex items-center justify-center px-10 py-5 bg-advisure-gold text-white text-xl font-bold rounded-full shadow-lg">
-                            Schedule a Conversation
-                        </Link>
+                        {['Insurance carriers', 'Investment managers', 'Legal and administrative workflows'].map((item) => (
+                            <div key={item} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem 0', borderBottom: '0.5px solid rgba(255,255,255,0.06)' }}>
+                                <div style={{ width: 4, height: 4, borderRadius: '50%', background: '#2E7DD4', flexShrink: 0 }} />
+                                <span style={{ fontSize: 14, color: '#888780' }}>{item}</span>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="reveal" style={{ background: '#1E1E1B', border: '0.5px solid rgba(255,255,255,0.08)', padding: '3.5rem 3rem' }}>
+                        <p className="font-serif" style={{ fontSize: 28, fontWeight: 300, color: '#FAFAF8', lineHeight: 1.35, marginBottom: '1.5rem' }}>
+                            What was once manual and disconnected
+                        </p>
+                        <p style={{ fontSize: 18, color: '#C9A96E', fontWeight: 400 }}>
+                            now becomes streamlined and scalable.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div className="h-24"></div>
+            </section>
+
+            {/* ── CTA ─────────────────────────────── */}
+            <section style={{ background: '#0E0E0C', borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '8rem 3rem', textAlign: 'center' }}>
+                <div className="reveal" style={{ maxWidth: 600, margin: '0 auto' }}>
+                    <h2 className="font-serif" style={{ fontSize: 'clamp(32px,4vw,52px)', fontWeight: 300, lineHeight: 1.15, marginBottom: '1.5rem' }}>
+                        Ready to see it in action?
+                    </h2>
+                    <p style={{ color: '#888780', lineHeight: 1.75, marginBottom: '3rem', fontSize: 16 }}>
+                        Book a conversation to see how Advisure strips away the complexity of private placement so you can scale institutional solutions for your clients.
+                    </p>
+                    <Link href="/schedule-demo" className="btn-outline btn-outline-lg">
+                        Schedule a Conversation
+                    </Link>
+                </div>
+            </section>
         </div>
     );
 }

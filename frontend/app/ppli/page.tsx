@@ -2,134 +2,144 @@ import Link from 'next/link';
 
 export default function PPLI() {
     return (
-        <div className="bg-off-white font-sans text-charcoal pb-24">
-            {/* Hero Section */}
-            <div className="bg-advisure-blue py-24 pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden rounded-b-[3rem] lg:rounded-b-[5rem]">
-                <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%22 height=%22100%22 filter=%22url(%23n)%22 opacity=%220.15%22/%3E%3C/svg%3E')] mix-blend-soft-light opacity-50 pointer-events-none"></div>
+        <div style={{ background: '#141412', color: '#FAFAF8' }}>
 
-                <div className="max-w-4xl mx-auto text-center relative z-10">
-                    <span className="text-advisure-gold font-bold tracking-widest uppercase text-sm mb-4 block">Education & Strategy</span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Understanding Private Placement</h1>
-                    <p className="text-xl text-white/90 font-medium leading-relaxed">
+            {/* ── HERO ──────────────────────────────── */}
+            <section className="grain-overlay relative overflow-hidden" style={{ paddingTop: '12rem', paddingBottom: '7rem', paddingLeft: '3rem', paddingRight: '3rem' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,169,110,0.05) 0%, transparent 70%)', pointerEvents: 'none' }} />
+                <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
+                    <div className="reveal">
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.5rem' }}>Education &amp; Strategy</span>
+                    </div>
+                    <h1 className="reveal d1 font-serif" style={{ fontSize: 'clamp(48px,7vw,88px)', fontWeight: 300, lineHeight: 1.08, letterSpacing: '-0.01em', maxWidth: 800, marginBottom: '2rem' }}>
+                        Understanding Private Placement
+                    </h1>
+                    <p className="reveal d2" style={{ fontSize: 18, color: '#888780', maxWidth: 520, lineHeight: 1.75 }}>
                         A clearer view of a misunderstood structure.
                     </p>
                 </div>
-            </div>
+            </section>
 
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20 space-y-12">
+            {/* ── A STRUCTURE, NOT A PRODUCT ────────── */}
+            <section style={{ borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '7rem 3rem' }}>
+                <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+                    <div className="reveal-l" style={{ marginBottom: '4rem', maxWidth: 720 }}>
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.25rem' }}>What It Is</span>
+                        <h2 className="font-serif" style={{ fontSize: 'clamp(32px,4vw,52px)', fontWeight: 300, lineHeight: 1.2, marginBottom: '1.5rem' }}>
+                            A Structure — Not a Product
+                        </h2>
+                        <p style={{ color: '#888780', lineHeight: 1.75, marginBottom: '1rem', fontSize: 15 }}>
+                            Private Placement Life Insurance (PPLI) and Private Placement Variable Annuities (PPVA) are institutional, tax-advantaged structures that allow investments to grow more efficiently within a defined framework.
+                        </p>
+                        <p style={{ color: '#888780', lineHeight: 1.75, fontSize: 15 }}>
+                            It is not a standalone product — but a way to hold and manage assets. Designed for high net worth and ultra-high net worth clients, these structures provide powerful advantages:
+                        </p>
+                    </div>
 
-                {/* Section 1: A Structure — Not a Product */}
-                <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-gold/5 rounded-bl-full"></div>
-                    <h2 className="text-3xl font-bold text-advisure-blue mb-4">A Structure — Not a Product</h2>
-                    <p className="text-lg text-charcoal/80 leading-relaxed mb-4">
-                        Private Placement Life Insurance (PPLI) and Private Placement Variable Annuities (PPVA) are institutional, tax-advantaged structures that allow investments to grow more efficiently within a defined framework.
-                    </p>
-                    <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
-                        It is not a standalone product — but a way to hold and manage assets. These structures are designed for high net worth and ultra-high net worth clients, providing powerful advantages such as:
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="bg-off-white p-6 rounded-2xl">
-                            <h3 className="text-lg font-bold mb-2 text-charcoal">Institutional Investment Access</h3>
-                            <p className="text-charcoal/70 text-sm leading-relaxed">Access premier alternative investments and asset managers, often at lower minimums than otherwise available.</p>
-                        </div>
-                        <div className="bg-off-white p-6 rounded-2xl">
-                            <h3 className="text-lg font-bold mb-2 text-charcoal">Tax Alpha</h3>
-                            <p className="text-charcoal/70 text-sm leading-relaxed">Shield high-tax, high-turnover strategies from ongoing drag, significantly improving long-term compounding and performance.</p>
-                        </div>
-                        <div className="bg-off-white p-6 rounded-2xl">
-                            <h3 className="text-lg font-bold mb-2 text-charcoal">Diversification &amp; Flexibility</h3>
-                            <p className="text-charcoal/70 text-sm leading-relaxed">Effectively diversify beyond traditional asset classes with greater control over structure and planning.</p>
-                        </div>
-                        <div className="bg-off-white p-6 rounded-2xl">
-                            <h3 className="text-lg font-bold mb-2 text-charcoal">Estate &amp; Legacy Control</h3>
-                            <p className="text-charcoal/70 text-sm leading-relaxed">Enhance legacy planning with greater control over how your assets are held, taxed, and transferred over time.</p>
-                        </div>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: '1px', background: 'rgba(255,255,255,0.06)' }}>
+                        {[
+                            { title: 'Institutional Investment Access', body: 'Access premier alternative investments and asset managers, often at lower minimums than otherwise available.' },
+                            { title: 'Tax Alpha', body: 'Shield high-tax, high-turnover strategies from ongoing drag — significantly improving long-term compounding.' },
+                            { title: 'Diversification & Flexibility', body: 'Diversify beyond traditional asset classes with greater control over structure and planning.' },
+                            { title: 'Estate & Legacy Control', body: 'Enhance legacy planning with greater control over how your assets are held, taxed, and transferred.' },
+                        ].map(({ title, body }) => (
+                            <div key={title} className="reveal" style={{ background: '#141412', padding: '2.5rem 2rem' }}>
+                                <h3 style={{ fontSize: 15, fontWeight: 500, color: '#FAFAF8', marginBottom: '0.75rem' }}>{title}</h3>
+                                <p style={{ fontSize: 13, color: '#888780', lineHeight: 1.7 }}>{body}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
+            </section>
 
-                {/* Section 2: Why It's Been Underutilized */}
-                <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-blue/5 rounded-bl-full"></div>
-                    <h2 className="text-3xl font-bold text-advisure-blue mb-4">The Gap Has Been Infrastructure</h2>
-                    <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
-                        Despite its benefits, adoption has been limited. Not because the strategy doesn&apos;t work — but because the systems to deliver it haven&apos;t existed.
-                    </p>
-                    <div className="space-y-4">
+            {/* ── THE GAP HAS BEEN INFRASTRUCTURE ──── */}
+            <section style={{ background: '#0E0E0C', borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '7rem 3rem' }}>
+                <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'start' }}>
+                    <div className="reveal-l">
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.25rem' }}>Why It&apos;s Been Underutilized</span>
+                        <h2 className="font-serif" style={{ fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 300, lineHeight: 1.2, marginBottom: '1.5rem' }}>
+                            The Gap Has Been Infrastructure
+                        </h2>
+                        <p style={{ color: '#888780', lineHeight: 1.75, fontSize: 15 }}>
+                            Despite its benefits, adoption has been limited. Not because the strategy doesn&apos;t work — but because the systems to deliver it haven&apos;t existed.
+                        </p>
+                    </div>
+                    <div className="reveal">
                         {[
                             { label: 'Operational complexity', detail: 'Fragmented carrier processes, manual paperwork, and disconnected workflows have made implementation impractical at scale.' },
                             { label: 'Lack of integration', detail: 'Private placement has historically lived outside the systems RIAs rely on — no reporting integration, no visibility into positions.' },
-                            { label: 'Limited accessibility for RIAs', detail: 'Without dedicated infrastructure, independent advisors couldn\'t offer these strategies efficiently to their clients.' },
+                            { label: 'Limited accessibility for RIAs', detail: "Without dedicated infrastructure, independent advisors couldn't offer these strategies efficiently to their clients." },
                         ].map(({ label, detail }) => (
-                            <div key={label} className="bg-off-white p-5 rounded-2xl border border-gray-100">
-                                <h3 className="font-bold text-charcoal mb-1">{label}</h3>
-                                <p className="text-sm text-charcoal/60 leading-relaxed">{detail}</p>
+                            <div key={label} className="pain-card">
+                                <p style={{ fontSize: 14, fontWeight: 500, color: '#FAFAF8', marginBottom: '0.35rem' }}>{label}</p>
+                                <p style={{ fontSize: 13, color: '#888780', lineHeight: 1.6 }}>{detail}</p>
                             </div>
                         ))}
                     </div>
                 </div>
+            </section>
 
-                {/* Section 3: Common Misconceptions */}
-                <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 hover-lift relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-advisure-gold/5 rounded-bl-full"></div>
-                    <h2 className="text-3xl font-bold text-advisure-blue mb-4">Reframing the Category</h2>
-                    <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
-                        Common misconceptions have kept private placement from its full potential. Here&apos;s a clearer picture:
-                    </p>
+            {/* ── REFRAMING THE CATEGORY ────────────── */}
+            <section style={{ borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '7rem 3rem' }}>
+                <div style={{ maxWidth: 1200, margin: '0 auto' }}>
 
-                    {/* Column headers */}
-                    <div className="grid grid-cols-2 gap-4 mb-2 px-1">
-                        <p className="text-xs font-bold uppercase tracking-widest text-red-400">Common belief</p>
-                        <p className="text-xs font-bold uppercase tracking-widest text-advisure-blue">The reality</p>
+                    <div className="reveal" style={{ marginBottom: '4rem', maxWidth: 680 }}>
+                        <span className="eyebrow" style={{ display: 'block', marginBottom: '1.25rem' }}>Common Misconceptions</span>
+                        <h2 className="font-serif" style={{ fontSize: 'clamp(32px,4vw,52px)', fontWeight: 300, lineHeight: 1.15, marginBottom: '1.25rem' }}>
+                            Reframing the Category
+                        </h2>
+                        <p style={{ color: '#888780', lineHeight: 1.75, fontSize: 15 }}>
+                            Common misconceptions have kept private placement from its full potential. Here&apos;s a clearer picture:
+                        </p>
                     </div>
 
-                    <div className="space-y-3">
+                    {/* Column headers */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', marginBottom: '1rem' }}>
+                        <p style={{ fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#5F5E5A', paddingLeft: '1.5rem' }}>Common belief</p>
+                        <p style={{ fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#5F5E5A', paddingLeft: '1.5rem' }}>The reality</p>
+                    </div>
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'rgba(255,255,255,0.06)' }}>
                         {[
-                            {
-                                myth: '"It\'s just insurance"',
-                                reality: 'It\'s a portfolio structure — a tax-advantaged wrapper for holding institutional investments.',
-                            },
-                            {
-                                myth: '"It\'s too complex"',
-                                reality: 'Complexity has historically been operational, not structural. With the right infrastructure, it\'s no more complex than any other allocation.',
-                            },
-                            {
-                                myth: '"It doesn\'t fit my model"',
-                                reality: 'It hasn\'t — until now. Advisure is built to make private placement fit seamlessly into the RIA model.',
-                            },
+                            { myth: '"It\'s just insurance"', reality: 'It\'s a portfolio structure — a tax-advantaged wrapper for holding institutional investments.' },
+                            { myth: '"It\'s too complex"', reality: 'Complexity has historically been operational, not structural. With the right infrastructure, it\'s no more complex than any other allocation.' },
+                            { myth: '"It doesn\'t fit my model"', reality: 'It hasn\'t — until now. Advisure is built to make private placement fit seamlessly into the RIA model.' },
                         ].map(({ myth, reality }) => (
-                            <div key={myth} className="grid grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-gray-100">
-                                <div className="bg-red-50 p-5 flex items-start gap-3 border-r border-gray-100">
-                                    <span className="text-red-300 font-bold text-lg leading-none mt-0.5 shrink-0">✕</span>
-                                    <span className="text-charcoal/60 italic text-sm leading-relaxed line-through decoration-red-200">{myth}</span>
+                            <div key={myth} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'rgba(255,255,255,0.06)' }}>
+                                <div style={{ background: 'rgba(180,40,40,0.05)', padding: '1.75rem 1.5rem', display: 'flex', gap: '0.75rem', alignItems: 'flex-start', borderLeft: '3px solid rgba(180,40,40,0.3)' }}>
+                                    <span style={{ color: 'rgba(220,80,80,0.5)', fontWeight: 600, flexShrink: 0, marginTop: 2 }}>✕</span>
+                                    <span style={{ color: '#888780', fontStyle: 'italic', fontSize: 14, lineHeight: 1.6, textDecoration: 'line-through', textDecorationColor: 'rgba(180,40,40,0.3)' }}>{myth}</span>
                                 </div>
-                                <div className="bg-blue-50 p-5 flex items-start gap-3">
-                                    <span className="text-advisure-blue font-bold text-lg leading-none mt-0.5 shrink-0">✓</span>
-                                    <span className="text-charcoal font-medium text-sm leading-relaxed">{reality}</span>
+                                <div style={{ background: 'rgba(46,125,212,0.04)', padding: '1.75rem 1.5rem', display: 'flex', gap: '0.75rem', alignItems: 'flex-start', borderLeft: '3px solid rgba(46,125,212,0.3)' }}>
+                                    <span style={{ color: '#2E7DD4', fontWeight: 600, flexShrink: 0, marginTop: 2 }}>✓</span>
+                                    <span style={{ color: '#FAFAF8', fontSize: 14, lineHeight: 1.6 }}>{reality}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                    <div className="mt-8 p-6 bg-blue-50 border-l-4 border-advisure-blue rounded-r-2xl">
-                        <p className="text-charcoal/80 font-medium italic">
+                    <div className="reveal" style={{ marginTop: '2rem', padding: '1.75rem 2rem', background: '#1E1E1B', border: '0.5px solid rgba(255,255,255,0.08)', borderLeft: '3px solid #2E7DD4' }}>
+                        <p style={{ color: '#888780', fontStyle: 'italic', fontSize: 15, lineHeight: 1.7 }}>
                             With the right infrastructure, private placement becomes practical — not theoretical.
                         </p>
                     </div>
                 </div>
+            </section>
 
-                {/* Bridge to Platform */}
-                <div className="mt-8 text-center">
-                    <h3 className="text-2xl font-bold mb-6">Understanding the strategy is just step one.</h3>
-                    <p className="text-lg text-charcoal/70 mb-8 max-w-2xl mx-auto">
-                        Advisure provides the platform to easily model, implement, and monitor these strategies at scale — without disrupting how you already manage assets.
+            {/* ── BRIDGE TO PLATFORM ───────────────── */}
+            <section style={{ background: '#0E0E0C', borderTop: '0.5px solid rgba(255,255,255,0.06)', padding: '8rem 3rem', textAlign: 'center' }}>
+                <div className="reveal" style={{ maxWidth: 600, margin: '0 auto' }}>
+                    <h2 className="font-serif" style={{ fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 300, lineHeight: 1.2, marginBottom: '1.25rem' }}>
+                        Understanding the strategy is just step one.
+                    </h2>
+                    <p style={{ color: '#888780', lineHeight: 1.75, marginBottom: '3rem', fontSize: 15 }}>
+                        Advisure provides the platform to model, implement, and monitor these strategies at scale — without disrupting how you already manage assets.
                     </p>
-                    <Link href="/platform" className="hover-lift inline-flex items-center justify-center px-10 py-5 bg-advisure-blue text-white text-lg font-bold rounded-full shadow-lg">
+                    <Link href="/platform" className="btn-outline btn-outline-lg">
                         Explore the Platform
                     </Link>
                 </div>
-
-            </div>
+            </section>
         </div>
     );
 }
