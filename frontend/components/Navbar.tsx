@@ -8,7 +8,7 @@ export function Navbar() {
         <nav style={{
             position: 'fixed', top: 0, left: 0, right: 0, zIndex: 200,
             display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            padding: '1.1rem 3rem',
+            padding: '0.85rem 3rem',
             background: 'rgba(20,20,18,0.94)',
             backdropFilter: 'blur(16px)',
             WebkitBackdropFilter: 'blur(16px)',
@@ -18,10 +18,10 @@ export function Navbar() {
                 <Image
                     src="/advisure-logo.svg"
                     alt="Advisure"
-                    width={140}
-                    height={36}
+                    width={180}
+                    height={48}
                     priority
-                    style={{ height: 32, width: 'auto', filter: 'brightness(0) invert(1)' }}
+                    style={{ height: 44, width: 'auto', filter: 'brightness(0) invert(1)' }}
                 />
             </Link>
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import Script from "next/script";
+import { RevealObserver } from "@/components/RevealObserver";
 
 export const metadata: Metadata = {
   title: "Advisure",
@@ -22,16 +22,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="antialiased min-h-screen flex flex-col">
         <Navbar />
+        <RevealObserver />
         <main className="flex-grow">{children}</main>
         <Footer />
-        <Script id="reveal-observer" strategy="afterInteractive">{`
-          const io = new IntersectionObserver(entries => {
-            entries.forEach(e => {
-              if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-            });
-          }, { threshold: 0.07 });
-          document.querySelectorAll('.reveal, .reveal-l').forEach(el => io.observe(el));
-        `}</Script>
       </body>
     </html>
   );

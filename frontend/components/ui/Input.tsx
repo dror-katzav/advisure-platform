@@ -13,12 +13,19 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 export function Input({ label, className, ...props }: InputProps) {
     return (
         <div className="flex flex-col gap-1.5">
-            <label className="text-sm font-medium text-gray-700">{label}</label>
+            <label style={{ fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase' as const, color: '#5F5E5A' }}>
+                {label}
+            </label>
             <input
                 className={cn(
-                    "flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50",
-                    className
+                    "flex h-10 w-full px-3 py-2 text-sm outline-none transition-colors disabled:cursor-not-allowed disabled:opacity-50",
+                    className,
                 )}
+                style={{
+                    background: '#282825',
+                    border: '0.5px solid rgba(255,255,255,0.1)',
+                    color: '#FAFAF8',
+                }}
                 {...props}
             />
         </div>
