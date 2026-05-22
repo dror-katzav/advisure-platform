@@ -23,14 +23,25 @@ export default function ScheduleDemo() {
                         Personalized walkthrough of our platform and solutions.
                     </p>
 
-                    <div style={{ width: '100%', overflow: 'hidden', background: '#fff' }}>
-                        <iframe
-                            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2aDAPLkykWNZZF5G5hXQv9L6xqI3p09jQYhPlN5PAHEwnSgpoOfmr3J58EP2WloVVhCz5_Byq9?gv=true"
-                            style={{ border: 0, display: 'block' }}
-                            width="100%"
-                            height="700"
-                            frameBorder="0"
-                        />
+                    <div style={{ textAlign: 'center', padding: '3rem 2rem' }}>
+                        <p className="font-serif" style={{ fontSize: 22, fontWeight: 300, color: '#FAFAF8', marginBottom: '0.75rem' }}>
+                            Choose a time that works for you
+                        </p>
+                        <p style={{ fontSize: 14, color: '#888780', marginBottom: '2.5rem' }}>
+                            Opens Google Calendar — pick a slot and confirm your details.
+                        </p>
+                        <a
+                            href="https://calendar.app.google/XQv12xk3h8DHtiNR6"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-outline btn-outline-lg"
+                            style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}
+                        >
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            Book a Time
+                        </a>
                     </div>
 
                     <div style={{ marginTop: '3rem', paddingTop: '3rem', borderTop: '0.5px solid rgba(255,255,255,0.06)', display: 'flex', gap: '3rem', justifyContent: 'center', flexWrap: 'wrap' }}>
