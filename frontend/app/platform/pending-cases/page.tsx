@@ -1,6 +1,6 @@
 'use client';
 
-import { FileText, AlertCircle, CheckCircle, Clock } from 'lucide-react';
+import { AlertCircle, CheckCircle, Clock } from 'lucide-react';
 import Link from 'next/link';
 import { usePlatform } from '@/context/PlatformContext';
 
@@ -18,11 +18,18 @@ export default function PendingCasesPage() {
         <div className="space-y-6">
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-bold text-gray-900">Pending Cases</h1>
-                <Link href="/platform/e-app">
-                    <button className="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">
-                        + New Application
-                    </button>
-                </Link>
+                <div className="flex items-center gap-3">
+                    <Link href="/platform/lead-registration">
+                        <button className="bg-white border border-gray-200 text-gray-700 px-3.5 py-2 text-sm font-medium hover:bg-gray-50 transition-colors">
+                            Lead Registration
+                        </button>
+                    </Link>
+                    <Link href="/platform/e-app">
+                        <button style={{ background: '#8B6F3E', color: '#FFFFFF', border: '1px solid #8B6F3E' }} className="px-4 py-2 text-sm font-medium hover:opacity-90 transition-opacity">
+                            + New Application
+                        </button>
+                    </Link>
+                </div>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

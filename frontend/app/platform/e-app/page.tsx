@@ -58,15 +58,15 @@ function EAppContent() {
             <div className="mb-8">
                 <div className="flex justify-between mb-2">
                     {['Client Info', 'Suitability', 'Funding', 'Review'].map((label, idx) => (
-                        <span key={label} className={`text-sm font-medium ${step > idx ? 'text-blue-900' : 'text-gray-400'}`}>
+                        <span key={label} className={`text-sm font-medium ${step > idx ? 'text-[#8B6F3E]' : 'text-gray-400'}`}>
                             {label}
                         </span>
                     ))}
                 </div>
-                <div className="h-2 bg-gray-200 rounded-full">
+                <div className="h-1.5 bg-gray-100 rounded-full">
                     <div
-                        className="h-2 bg-blue-900 rounded-full transition-all duration-300"
-                        style={{ width: `${(step / 4) * 100}%` }}
+                        className="h-1.5 rounded-full transition-all duration-300"
+                        style={{ width: `${(step / 4) * 100}%`, background: '#8B6F3E' }}
                     ></div>
                 </div>
             </div>
@@ -95,7 +95,7 @@ function EAppContent() {
                             </div>
                         </div>
                         <div className="flex justify-end pt-6">
-                            <button onClick={() => setStep(2)} className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-800">
+                            <button onClick={() => setStep(2)} style={{ background: '#8B6F3E', color: '#FFFFFF' }} className="px-6 py-2 text-sm font-medium hover:opacity-90 transition-opacity">
                                 Next: Suitability
                             </button>
                         </div>
@@ -105,7 +105,7 @@ function EAppContent() {
                 {/* Step 2: Suitability */}
                 {step === 2 && (
                     <div className="space-y-6">
-                        <h2 className="text-xl font-semibold text-gray-900">Suitability & Accreditation</h2>
+                        <h2 className="text-xl font-semibold text-gray-900">Suitability &amp; Accreditation</h2>
                         <div className="space-y-4">
                             <div>
                                 <label className="flex items-center space-x-3">
@@ -129,8 +129,8 @@ function EAppContent() {
                             </div>
                         </div>
                         <div className="flex justify-between pt-6">
-                            <button onClick={() => setStep(1)} className="text-gray-600 hover:text-gray-900">Back</button>
-                            <button onClick={() => setStep(3)} className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-800">
+                            <button onClick={() => setStep(1)} className="text-gray-500 hover:text-gray-900 text-sm font-medium">← Back</button>
+                            <button onClick={() => setStep(3)} style={{ background: '#8B6F3E', color: '#FFFFFF' }} className="px-6 py-2 text-sm font-medium hover:opacity-90 transition-opacity">
                                 Next: Funding
                             </button>
                         </div>
@@ -158,8 +158,8 @@ function EAppContent() {
                             </div>
                         </div>
                         <div className="flex justify-between pt-6">
-                            <button onClick={() => setStep(2)} className="text-gray-600 hover:text-gray-900">Back</button>
-                            <button onClick={() => setStep(4)} className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-800">
+                            <button onClick={() => setStep(2)} className="text-gray-500 hover:text-gray-900 text-sm font-medium">← Back</button>
+                            <button onClick={() => setStep(4)} style={{ background: '#8B6F3E', color: '#FFFFFF' }} className="px-6 py-2 text-sm font-medium hover:opacity-90 transition-opacity">
                                 Review Application
                             </button>
                         </div>

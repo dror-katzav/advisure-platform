@@ -89,7 +89,7 @@ function PolicyManagementContent() {
             {!selectedClient && (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-center space-x-4">
-                        <div className="bg-blue-100 p-3 rounded-full text-blue-900"><Users size={24} /></div>
+                        <div className="p-3 rounded-full" style={{ background: '#FBF7EE', color: '#8B6F3E' }}><Users size={24} /></div>
                         <div>
                             <p className="text-sm font-medium text-gray-500">Total Clients</p>
                             <p className="text-2xl font-bold text-gray-900">{totalClients}</p>
@@ -116,7 +116,7 @@ function PolicyManagementContent() {
             {selectedClient && (
                 <button
                     onClick={() => setSelectedClient(null)}
-                    className="flex items-center text-gray-600 hover:text-blue-900 mb-4"
+                    className="flex items-center text-gray-500 hover:text-[#8B6F3E] mb-4 text-sm font-medium transition-colors"
                 >
                     <ArrowLeft size={20} className="mr-2" /> Back to Client List
                 </button>
@@ -215,7 +215,8 @@ function PolicyManagementContent() {
                             <div className="relative">
                                 <button
                                     onClick={() => toggleDropdown('action')}
-                                    className="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800 text-sm font-medium inline-flex items-center"
+                                    className="text-white px-4 py-2 text-sm font-medium inline-flex items-center hover:opacity-90 transition-opacity"
+                                    style={{ background: '#8B6F3E' }}
                                 >
                                     <Briefcase size={16} className="mr-2" /> Take Action <ChevronDown size={14} className="ml-2" />
                                 </button>
@@ -245,7 +246,7 @@ function PolicyManagementContent() {
                                     <div key={i} className="flex justify-between text-sm">
                                         <span className="text-gray-600">{item}</span>
                                         <div className="w-24 bg-gray-100 rounded-full h-2 mt-1.5">
-                                            <div className="bg-blue-900 h-2 rounded-full" style={{ width: `${40 - i * 10}%` }}></div>
+                                            <div className="h-2 rounded-full" style={{ width: `${40 - i * 10}%`, background: '#8B6F3E' }}></div>
                                         </div>
                                     </div>
                                 ))}
@@ -288,7 +289,7 @@ function PolicyManagementContent() {
                                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                             <button
                                                 onClick={() => setShowAllocationModal(true)}
-                                                className="text-blue-600 hover:text-blue-900 flex items-center ml-auto"
+                                                className="text-[#8B6F3E] hover:opacity-70 flex items-center ml-auto text-sm font-medium transition-opacity"
                                             >
                                                 <RefreshCcw size={16} className="mr-1" /> Change Allocation
                                             </button>

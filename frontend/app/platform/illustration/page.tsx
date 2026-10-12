@@ -1,27 +1,28 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { Input } from '@/components/ui/Input';
 import { FileText, Save, PlayCircle } from 'lucide-react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { usePlatform } from '@/context/PlatformContext';
 
-export default function IllustrationPage() {
+function IllustrationForm() {
     const [showResults, setShowResults] = useState(false);
     const router = useRouter();
+    const searchParams = useSearchParams();
     const { addCase } = usePlatform();
 
     const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
+        firstName: searchParams.get('firstName') || '',
+        lastName: searchParams.get('lastName') || '',
         ownership: 'Individual',
         gender: 'Male',
         dob: '',
-        state: '',
+        state: searchParams.get('state') || '',
         uwClass: 'Preferred Best Non-Tobacco',
         carrier: 'Prudential',
-        premium: '',
+        premium: searchParams.get('premium') || '',
         dbo: 'Level',
         rate: '7.0'
     });
@@ -46,6 +47,7 @@ export default function IllustrationPage() {
             requirements: []
         });
         alert('Illustration saved to Pending Cases!');
+        router.push('/platform/pending-cases');
     };
 
     const startEAppParams = new URLSearchParams({
@@ -160,7 +162,7 @@ export default function IllustrationPage() {
                     </div>
 
                     <div className="flex justify-end pt-4">
-                        <button type="submit" className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-800 flex items-center">
+                        <button type="submit" style={{ background: '#8B6F3E', color: '#FFFFFF' }} className="px-6 py-2 text-sm font-medium hover:opacity-90 transition-opacity flex items-center">
                             <FileText size={18} className="mr-2" />
                             Show Illustration
                         </button>
@@ -207,7 +209,7 @@ export default function IllustrationPage() {
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{year}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{45 + year}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-right">${premium.toLocaleString()}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-blue-900 text-right">${cv.toLocaleString()}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-right" style={{ color: '#8B6F3E' }}>${cv.toLocaleString()}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">${db.toLocaleString()}</td>
                                         </tr>
                                     );
@@ -220,3 +222,12 @@ export default function IllustrationPage() {
         </div>
     );
 }
+
+export default function IllustrationPage() {
+    return (
+        <Suspense fallback={<div className="p-8 text-white">Loading illustration form...</div>}>
+            <IllustrationForm />
+        </Suspense>
+    );
+}
+
